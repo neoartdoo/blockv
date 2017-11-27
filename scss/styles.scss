@@ -1,0 +1,36 @@
+// Base
+@import "base/var";
+@import "base/mix";
+@import "base/global";
+@import "base/fonts";
+// Layout
+@import "grid/grid";
+// Elements
+@import "elements/header";
+@import "elements/hero";
+@import "elements/buttons";
+@import "elements/countdown";
+@import "elements/forms";
+@import "elements/circles";
+@import "elements/footer";
+@import "elements/videos";
+@import "elements/base";
+@import "elements/card";
+@import "elements/key-dates";
+@import "elements/team";
+@import "elements/faq";
+@import "elements/techstack";
+@import "elements/vatoms-sect";
+@import "elements/dev-sect";
+@import "elements/modal";
+@import "elements/select/core";
+
+@import "elements/thanks-sect";
+@import "elements/tryit-sect";
+@import "elements/join-sect";
+@import "elements/fmtb-sect";
+@import "slick/slick-theme";
+@import "slick/slick";
+
+//AOS 
+// @import "aos/aos";

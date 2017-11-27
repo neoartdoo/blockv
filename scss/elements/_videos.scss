@@ -1,0 +1,29 @@
+.videos {
+  background-color: rgba(#5489F5,.2);
+  border: solid thin rgba(#C6F0FF, .5);
+  padding:10px 40px 30px;
+  margin-bottom: 50px;
+  .video-container {
+    padding: 0 0 20;
+    p {
+      font-weight: 100;
+      letter-spacing: 2px;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  /* 16:9 */
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

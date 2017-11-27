@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="606px" height="68px" viewBox="0 0 606 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="104.752155%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#5598D3" offset="0%"></stop>
+            <stop stop-color="#0D224B" stop-opacity="0.929744112" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="vATOMS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-20" transform="translate(-182.000000, -330.000000)">
+            <g id="left" transform="translate(77.000000, -86.000000)">
+                <g id="Group-2-Copy-10" transform="translate(105.000000, 416.000000)">
+                    <polygon id="Rectangle-2-Copy-2" fill="#060C1D" opacity="0.28" points="8 4 606 4 552 68 8 68"></polygon>
+                    <polygon id="Rectangle-2" fill="url(#linearGradient-1)" opacity="0.4" points="0 0 589 0 534 64 0 64"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

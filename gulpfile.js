@@ -7,7 +7,6 @@ var browserSync = require('browser-sync');
 var notify = require('gulp-notify');
 var sourcemaps = require('gulp-sourcemaps');
 
-
 gulp.task('sass', function () {
   gulp.src('scss/styles.scss')
     .pipe(sass({ includePaths: ['scss'] }))
@@ -29,8 +28,7 @@ gulp.task('browser-sync', function () {
     '*.html',
     'css/*.css',
     'js/*.js',
-    'scss/**/*.scss',
-    ''
+    'scss/**/*.scss'
   ];
 
   browserSync.init(files, {
@@ -39,12 +37,11 @@ gulp.task('browser-sync', function () {
     }
   });
 });
-
-gulp.task('imagemin', function () {
-    gulp.src('img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('img/'))
-});
+gulp.task('imagemin', () =>
+  gulp.src('img/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('img/'))
+);
 
 gulp.task('default', ['sass', 'browser-sync', 'imagemin'], function () {
   gulp.watch("scss/**/*.scss", ['sass', browserSync.reload]);

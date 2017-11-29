@@ -7,12 +7,12 @@ setTimeout(function () {
     $(this).toggleClass('close-menu');
   });
 }, 1000);
-$(document).ready(function () { 
-  
-  
+$(document).ready(function () {
+
+
   setTimeout(function () {
     $('.countdown-wrapper').addClass('show');
-    
+
     $(window).scrollTop(0);
   }, 2000);
 })
@@ -22,18 +22,18 @@ $(window).on("scroll", function () {
   var scroll = $(window).scrollTop(),
     header = $(".main-header"),
     logo = $(".logo");
-  
+
   countdown = $(".countdown-wrapper.index");
   header.toggleClass("sticky", (scroll > 1));
   logo.toggleClass("sticky", (scroll > 1));
   $('.hero-sect').toggleClass("sticky", (scroll > 1));
   $('body').toggleClass("sticky", (scroll > 1));
-  
+
   if (countdown.hasClass("hide")) {
     countdown.appendTo('.main-header .container');
     // countdown.fadeOut(300);
     // setTimeout(function() {
-      
+
     // }, 300);
     // countdown.fadeIn(300);
   } else {
@@ -48,12 +48,12 @@ $(window).on("scroll", function () {
 });
 
 // FAQ page function
-$('.questions li').each(function () { 
-  var target = $(this).attr("rel"); 
-  var scrollPos = $('#' + target).position().top; 
-  $(this).click(function () { 
-    $('.answers').animate({ 
-      scrollTop: scrollPos 
+$('.questions li').each(function () {
+  var target = $(this).attr("rel");
+  var scrollPos = $('#' + target).position().top;
+  $(this).click(function () {
+    $('.answers').animate({
+      scrollTop: scrollPos
     }, 400);
   });
 });
@@ -72,14 +72,14 @@ function isEmail(email) {
       setTimeout(function() {
         $('.form-group').removeClass('valid');
         emailBox.val('');
-      }, 3500); 
+      }, 3500);
     } else {
       if (emailBox.val() == "") {
         $('.form-group').removeClass('invalid');
       } else {
         $('.form-group').removeClass('valid').addClass('invalid');
       }
-    } 
+    }
   });
   $('.subscribe-updates .form-group input').on('focus', function () {
     $('.form-group').removeClass('invalid');
@@ -111,7 +111,7 @@ $("#videos").click(function () {
 //       heightContainer = 2600;
 //     }
 
-//     if (top > contVertiicalScroll && 
+//     if (top > contVertiicalScroll &&
 //         top < contVertiicalScroll + heightContainer) {
 
 //         $('.techstack-section').addClass('fixed');
@@ -131,7 +131,7 @@ $("#videos").click(function () {
 //         }
 //         $(itms[index]).find('svg').css('opacity', percentScroll);
 //         $(itms[index]).find('.icon-group').css('opacity', 0);
-        
+
 //         //console.log('elemIndex: '+index+' opacity percent: '+ percentScroll)
 //     }
 //     else if (top < contVertiicalScroll){
@@ -144,7 +144,7 @@ $("#videos").click(function () {
 //         $('.techstack-section').addClass('finish');
 
 //         var currentHeight =  $('.techstack-section').height();
-        
+
 //         var newHeight  = $('.thechstack-wrapper').height();
 //         console.log('difference' + (currentHeight-newHeight))
 //         var difference = currentHeight-newHeight;
@@ -171,8 +171,8 @@ var heightTimelineContainer = 2600;
 //     return check;
 //   };
 
-//   if (window.mobilecheck() === false && 
-//       $('.key-dates').length > 0 && 
+//   if (window.mobilecheck() === false &&
+//       $('.key-dates').length > 0 &&
 //       $('.key-dates').hasClass('finish') == false) {
 //     var doc = document.documentElement;
 //     var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
@@ -200,12 +200,12 @@ var heightTimelineContainer = 2600;
 
 //     var scrollCurrentElem = scrollElem - index * elemTimelineScroll;
 //     var percentScroll = scrollCurrentElem / elemTimelineScroll;
-    
+
 //     var translateX = -2000 + 2000 * percentScroll;
 //     translateX = 'translateX(' + translateX + 'px)'
 
 //     for (var i = 0; i < index; i++) {
-      
+
 //       $(itms[i]).find('span').css('transform', 'translateX(0)');
 //       $(itms[i]).addClass('active');
 
@@ -218,20 +218,20 @@ var heightTimelineContainer = 2600;
 
 //       $(itms[i]).find('i').css('width', '0%');
 //     }
-    
+
 //     if (index > 0)
 //       $(itms[index - 1]).find('i').css('width', (percentScroll * 100) + '%');
 
 
 //     $(itms[index]).find('span').css('transform', translateX);
-    
+
 
 //     if (top > contTimelineVertiicalScroll &&
 //       top < contTimelineVertiicalScroll + heightTimelineContainer) {
 
 //       $('.key-dates').addClass('fixed');
 //       $('.key-dates').removeClass('absolute');
-        
+
 //       //console.log('elemIndex: '+index+' translate: '+ translateX)
 //     }
 //     else if (top < contTimelineVertiicalScroll) {
@@ -244,7 +244,7 @@ var heightTimelineContainer = 2600;
 
 
 //       $('.key-dates').addClass('finish');
-      
+
 //       var currentHeight =  $('.key-dates').height();
 //       var newHeight  = $('.key-dates-wrapper').height();
 
@@ -265,7 +265,7 @@ var heightTimelineContainer = 2600;
 //Typewriting Effect
 
 var aText = new Array(
-  "BUILD THE EXPERIENTIAL ECONOMY OF THE FUTURE AND UNLOCK NEW REVENUE WITH BLOCKCHAIN AND SMART DIGITAL OBJETCS."
+  "BUILD THE EXPERIENTIAL ECONOMY OF THE FUTURE AND UNLOCK NEW REVENUE WITH BLOCKCHAIN AND SMART DIGITAL OBJECTS."
 );
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
@@ -315,9 +315,9 @@ $(document).on('click', '.mobile-container .btn-close', function(event){
   $('.developer-sect .sect-content').removeClass('hide');
 
   $('.video-placeholder').removeClass('hide');
-  $('#video').attr('src', function(index, attr) {   
-    return attr.replace('&autoplay=1', '');     
-  }); 
+  $('#video').attr('src', function(index, attr) {
+    return attr.replace('&autoplay=1', '');
+  });
 });
 
 // Steps App Preview
@@ -333,7 +333,28 @@ step.click(function () {
 });
 
 // Roadmap
+// make to roadmap loops
+// in every 3 seconds
 var year = $(".years li");
+// check how may child we have
+var length = $('.years li').length;
+var itemCounter = 1;
+var tab = $(".y-content div");
+setInterval(function () {
+  let elem = $('.years li:nth-child(' + itemCounter + ')');
+  var activeTab = $(elem).attr('rel');
+  tab.removeClass('active');
+  $('#' + activeTab).addClass('active');
+
+  year.removeClass('active');
+  $(elem).addClass('active');
+
+  itemCounter++;
+  if (itemCounter > length) {
+    itemCounter = 1;
+  }
+}, 3000);
+
 year.click(function () {
   var tab = $(".y-content div"),
     activeTab = $(this).attr("rel");
@@ -348,8 +369,8 @@ year.click(function () {
 var modal = $('.modal'),
 modalClose = $('.modal-close');
 
-$(".modal-btn").click(function() {   
-  modalBtn = $(this).attr("rel"); 
+$(".modal-btn").click(function() {
+  modalBtn = $(this).attr("rel");
     $("#"+modalBtn).addClass('show');
     $('.blur-modal').blurjs({
       customClass: 'blurjs',
@@ -361,6 +382,6 @@ modalClose.click(function() {
   modal.removeClass('show');
   $.blurjs('reset');
 });
-      
+
 var slider = $('.slider');
 slider.slick();

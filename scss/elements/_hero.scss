@@ -1,10 +1,13 @@
 .hero-sect {
-  height: 100vh;
+  //height: 100vh;
   position: relative;
   background:$dark-background;
-
+  .container {
+    padding-top: 200px;
+  }
   .hero-title {
     color: $white;
+    padding-right: 30px;
   }
   p {
     color:$white;
@@ -47,7 +50,6 @@
     .hero-title {
       transform: translateY(0);
       margin-bottom: 30px;
-      
     }
     .countdown-sect {
       text-align: center;
@@ -77,8 +79,13 @@
   // &.sticky {
 
 
-    
+
   // }
+  @media (max-width:768px) {
+    .container {
+      padding-top: 0;
+    }
+  }
 }
 @media (max-width:991px) {
   .sub-title {

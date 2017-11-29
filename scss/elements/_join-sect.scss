@@ -1,9 +1,13 @@
 .join-sect {
   background: $dark-background;
   padding: 70px 0;
-  h1 {
-    color: white;
+  h1, h2 {
     margin-bottom: 50px;
+    font-weight: 200;
+    color: white;
+  }
+  .hero-title {
+    text-transform: none;
   }
   .row  {
     justify-content: center;

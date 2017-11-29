@@ -7,6 +7,9 @@ var browserSync = require('browser-sync');
 var notify = require('gulp-notify');
 var sourcemaps = require('gulp-sourcemaps');
 
+
+var nodemon = require('gulp-nodemon');
+
 gulp.task('sass', function () {
   gulp.src('scss/styles.scss')
     .pipe(sass({ includePaths: ['scss'] }))
@@ -33,18 +36,36 @@ gulp.task('browser-sync', function () {
 
   browserSync.init(files, {
     server: {
+      port: 3000,
       baseDir: './'
     }
   });
 });
-gulp.task('imagemin', () =>
-  gulp.src('img/*')
-  .pipe(imagemin())
-  .pipe(gulp.dest('img/'))
-);
 
-gulp.task('default', ['sass', 'browser-sync', 'imagemin'], function () {
+gulp.task('imagemin', function () {
+    gulp.src('img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('img/'))
+});
+
+gulp.task('default', ['sass', 'browser-sync', 'imagemin', 'nodemon'], function () {
   gulp.watch("scss/**/*.scss", ['sass', browserSync.reload]);
   gulp.watch("img/**/*.jpg", ['imagemin', browserSync.reload]);
   gulp.watch("*.html", [browserSync.reload]);
+});
+
+
+gulp.task('nodemon', function (cb) {
+    console.log('NODEMON!!!!!!!!!!!!!!!!!!!!!');
+    var started = false;
+    return nodemon({
+        script: 'server/server.js'
+    }).on('start', function () {
+        // to avoid nodemon being started multiple times
+        // thanks @matthisk
+        if (!started) {
+            cb();
+            started = true;
+        }
+    });
 });

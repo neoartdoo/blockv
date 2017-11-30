@@ -33,8 +33,20 @@
 @import "slick/slick";
 
 p {
-  font-family: 'Helvetica Neue';
+  font-family: 'Avenir Book';
+  line-height: 50px; 
 }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url('../fonts/avenir/Avenir-BookOblique.eot');
+  src: url('../fonts/avenir/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/avenir/Avenir-BookOblique.woff') format('woff'),
+      url('../fonts/avenir/Avenir-BookOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 
 //AOS
 // @import "aos/aos";

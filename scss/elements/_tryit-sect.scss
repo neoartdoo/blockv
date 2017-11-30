@@ -131,6 +131,10 @@
       zoom: .5;
     }
   }
+
+  @media (max-width: 414px) {
+    z-index: -1;
+  }
   @media (max-width: 375px) {
     .app-preview {
       left: 7%;

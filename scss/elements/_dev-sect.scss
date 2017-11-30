@@ -300,8 +300,9 @@
     }
     .app-preview-wrap {
       img {
-        left: 25%;
         position: relative;
+        left: 25%;
+        z-index: 1;
       }
     }
 
@@ -344,5 +345,6 @@
 .slider {
   img {
     width: 100%;
+    height: 100%;
   }
 }

@@ -2435,6 +2435,10 @@ input[type="button"].btn-block {
 .techstack-section {
   position: relative;
   padding: 70px 0 0; }
+  .techstack-section .blockchain {
+    position: relative;
+    left: -12px;
+    white-space: nowrap; }
   .techstack-section .thechstack-wrapper {
     height: 100vh; }
   .techstack-section.fixed .thechstack-wrapper {
@@ -2967,8 +2971,9 @@ input[type="button"].btn-block {
       height: 50vh !important;
       width: 50vw !important; }
     .devs-sect .app-preview-wrap img {
+      position: relative;
       left: 25%;
-      position: relative; }
+      z-index: 1; }
     .devs-sect .slider-wrap {
       position: absolute !important;
       width: 44.8% !important;
@@ -2997,7 +3002,8 @@ input[type="button"].btn-block {
         height: 100%; } }
 
 .slider img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .modal {
   position: fixed;
@@ -3501,6 +3507,9 @@ input[type="button"].btn-block {
         top: 20%;
         right: 1%;
         zoom: .5; } }
+  @media (max-width: 414px) {
+    .tryit-sect {
+      z-index: -1; } }
   @media (max-width: 375px) {
     .tryit-sect .app-preview {
       left: 7%; } }

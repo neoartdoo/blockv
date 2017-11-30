@@ -2,6 +2,11 @@
   // height: 3200px;
   position: relative;
   padding: 70px 0 0;
+  .blockchain {
+    position: relative;
+    left: -12px;
+    white-space: nowrap;
+  }
   .thechstack-wrapper {
     height: 100vh;
   }
@@ -53,7 +58,7 @@
         right: 100%;
         background: -webkit-linear-gradient(left, $white 0, rgba($white, 0) 100%);
         }
-      } 
+      }
       &.right {
         &:before {
           content: '';
@@ -61,7 +66,7 @@
           background: -webkit-linear-gradient(right, $white 0, rgba($white, 0) 100%);
         }
       }
-      
+
        > svg {
          width: 100%;
          opacity: .3;
@@ -134,7 +139,7 @@
              transition-delay: 0;
            }
          }
-       }  
+       }
      }
     &:nth-child(1) {
       .level-wrapper {
@@ -142,7 +147,7 @@
           background: -webkit-linear-gradient(left, #4488db 0, rgba($white, 0) 100%);
         }
       }
-      top: 0; 
+      top: 0;
       z-index: 6;
       svg {
         .st0 {
@@ -292,7 +297,7 @@
         }
         h5 {
           color: #6f24d1;
-          
+
         }
       }
     }
@@ -343,7 +348,7 @@
           .icon-group {
             &.left {
               left: auto;
-              transform: translate(-15px, -50%);  
+              transform: translate(-15px, -50%);
               right: -120% !important;
               width: 105% !important;
               zoom: .8;
@@ -385,7 +390,7 @@
             }
           }
         }
-        .icon-group {         
+        .icon-group {
           p {
             font-weight: 100;
             font-size: 10px;

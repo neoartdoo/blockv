@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "Blockv",
   "author": "Lusso",
+  "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "start": "node ./server/server.js",
+    "start:g": "server.js",
     "postinstall": "gulp default"
   },
   "devDependencies": {

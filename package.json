@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Blockv",
   "author": "Lusso",
+  "scripts": {
+    "start": "gulp",
+    "postinstall": "gulp default"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "~3.9.x",
@@ -13,6 +17,7 @@
   },
   "license": "",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "gulp-nodemon": "^2.2.1",
     "gulp-sass": "^3.1.0",

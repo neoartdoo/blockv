@@ -25,7 +25,21 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('browser-sync', function () {
+gulp.task('nodemon', function (cb) {
+    console.log('NODEMON!!!!!!!!!!!!!!!!!!!!!');
+    var started = false;
+    return nodemon({
+        script: 'server/server.js'
+    }).on('start', function () {
+        if (!started) {
+            cb();
+            started = true;
+        }
+    });
+});
+
+gulp.task('browser-sync', ['nodemon'], function () {
+// gulp.task('browser-sync', function () {
   var files = [
     '**/*.html',
     '*.html',
@@ -34,38 +48,27 @@ gulp.task('browser-sync', function () {
     'scss/**/*.scss'
   ];
 
-  browserSync.init(files, {
+  return browserSync.init(files, {
     server: {
       port: 3000,
       baseDir: './'
+        // ,
+      // server: './server/server2.js'
     }
   });
 });
 
-gulp.task('imagemin', function () {
-    gulp.src('img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('img/'))
-});
+// gulp.task('imagemin', function () {
+//     gulp.src('img/*')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest('img/'))
+// });
 
-gulp.task('default', ['sass', 'browser-sync', 'imagemin', 'nodemon'], function () {
+
+// gulp.task('default', ['sass', 'browser-sync', 'imagemin', 'nodemon'], function () {
+// gulp.task('default', ['sass', 'browser-sync', 'nodemon'], function () {
+gulp.task('default', ['sass', 'browser-sync'], function () {
   gulp.watch("scss/**/*.scss", ['sass', browserSync.reload]);
-  gulp.watch("img/**/*.jpg", ['imagemin', browserSync.reload]);
+  // gulp.watch("img/**/*.jpg", ['imagemin', browserSync.reload]);
   gulp.watch("*.html", [browserSync.reload]);
-});
-
-
-gulp.task('nodemon', function (cb) {
-    console.log('NODEMON!!!!!!!!!!!!!!!!!!!!!');
-    var started = false;
-    return nodemon({
-        script: 'server/server.js'
-    }).on('start', function () {
-        // to avoid nodemon being started multiple times
-        // thanks @matthisk
-        if (!started) {
-            cb();
-            started = true;
-        }
-    });
 });

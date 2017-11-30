@@ -1,6 +1,4 @@
 
-
-
 //Mobile Menu
 setTimeout(function () {
   $(".menu-animated").on('click', function () {
@@ -71,6 +69,25 @@ function isEmail(email) {
     var emailBox = $('.subscribe-updates .form-group input')
     if (isEmail(emailBox.val())) {
       $('.form-group').addClass('valid').removeClass('invalid');
+      // $.post("test.php", { json_string:JSON.stringify({name:"John", time:"2pm"}) });
+      var url = 'http://localhost:3005/api/emails';
+      var data = {
+        emailText: emailBox.val()
+      };
+      console.log('data = ' + JSON.stringify(data));
+
+      $.ajax({
+          url        : url,
+          dataType   : 'json',
+          // async      : false,
+          contentType: 'application/json',
+          data       : JSON.stringify(data),
+          // cache      : false,
+          // timeout    : 5000,
+          type       : 'POST'
+          // complete   : callback // etc
+      });
+
       setTimeout(function() {
         $('.form-group').removeClass('valid');
         emailBox.val('');

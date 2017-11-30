@@ -333,6 +333,37 @@
       }
     }
   }
+
+  // media query here
+  @media (max-width:414px) {
+    .level {
+      &:nth-child(1) {
+        top: 0;
+        left: -10px;
+        z-index: 6;
+      }
+      &:nth-child(2) {
+        top: 19%;
+        left: -10px;
+      }
+      &:nth-child(3) {
+        top: 38%;
+        left: -10px;
+      }
+      &:nth-child(4) {
+        top: 57%;
+        left: -10px;
+      }
+      &:nth-child(5) {
+        top: 76%;
+        left: -10px;
+      }
+      &:nth-child(6) {
+        top: 95%;
+        left: -10px;
+      }
+    }
+  }
 }
 .techstack {
   .level {
@@ -349,8 +380,8 @@
             &.left {
               left: auto;
               transform: translate(-15px, -50%);
-              right: -120% !important;
-              width: 105% !important;
+              // right: -120% !important;
+              // width: 105% !important;
               zoom: .8;
             }
           }

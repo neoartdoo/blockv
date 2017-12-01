@@ -2237,7 +2237,7 @@ input[type="button"].btn-block {
     text-align: center;
     position: relative;
     min-height: 24vh;
-    top: -15%; }
+    top: -10%; }
     .roadmap-sect .y-content div {
       opacity: 0;
       visibility: hidden;
@@ -2951,7 +2951,7 @@ input[type="button"].btn-block {
   position: relative;
   background: #d8d9ef;
   height: 70vh;
-  margin-bottom: 30vh;
+  margin-bottom: 35vh;
   color: #656aa1; }
   .devs-sect .hero-title {
     position: absolute;
@@ -3462,12 +3462,13 @@ input[type="button"].btn-block {
   height: 100vh;
   position: relative;
   color: #656aa1;
-  padding-top: 60px; }
+  padding-top: 130px; }
   .tryit-sect .app-preview {
     position: absolute;
+    position: absolute;
     left: 18%;
-    width: 27%;
-    top: 6%; }
+    width: 33%;
+    top: 17%; }
     .tryit-sect .app-preview .app-preview-wrap {
       width: 80%;
       height: 100%;
@@ -3646,7 +3647,7 @@ input[type="button"].btn-block {
     margin-top: 50px; }
 
 .fmtb-sect {
-  height: 85vh;
+  height: 95vh;
   position: relative;
   overflow: hidden;
   background-color: #eff0f9;

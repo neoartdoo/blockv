@@ -2269,6 +2269,9 @@ input[type="button"].btn-block {
   @media (max-width: 414px) {
     .roadmap-sect {
       height: 102vh; } }
+  @media (max-width: 320px) {
+    .roadmap-sect .col-md-8 {
+      padding: 0; } }
 
 .doc-sect {
   padding: 70px 0;
@@ -2461,6 +2464,9 @@ input[type="button"].btn-block {
     position: absolute;
     bottom: 90px;
     width: 100%; }
+  @media (max-width: 320px) {
+    .techstack-section {
+      padding: 30px 0 30px 0; } }
 
 .hero-title {
   margin-bottom: 50px; }
@@ -2680,6 +2686,33 @@ input[type="button"].btn-block {
     .techstack .level:nth-child(6) {
       top: 95%;
       left: -10px; } }
+  @media (max-width: 320px) {
+    .techstack .level:nth-child(1) {
+      top: 0;
+      left: -10px;
+      z-index: 6; }
+    .techstack .level:nth-child(2) {
+      top: 22%;
+      left: -10px; }
+    .techstack .level:nth-child(3) {
+      top: 44%;
+      left: -10px; }
+    .techstack .level:nth-child(4) {
+      top: 66%;
+      left: -10px; }
+    .techstack .level:nth-child(5) {
+      top: 88%;
+      left: -10px; }
+    .techstack .level:nth-child(6) {
+      top: 110%;
+      left: -10px; }
+    .techstack .tech-stack-menu-header-blockchain {
+      position: relative;
+      left: -42px; }
+    .techstack .tech-stack-font-size-nucleus {
+      font-size: 12px !important; }
+    .techstack .tech-stack-menu-header-registry {
+      padding-top: 20px !important; } }
 
 @media (max-width: 769px) {
   .techstack .level {

@@ -259,6 +259,12 @@
   @media (max-width: 414px) {
     height: 102vh;
   }
+
+  @media (max-width: 320px) {
+    .col-md-8 {
+      padding: 0;
+    }
+  }
 }
 .doc-sect {
   padding: 70px 0;

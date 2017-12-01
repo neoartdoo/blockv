@@ -198,25 +198,29 @@
   position: relative;
   background: #d8d9ef;
   height: 70vh;
-  margin-bottom: 35vh;
+  margin-bottom: 20vh;
   color: $theme-color;
-  .hero-title{
-    position: absolute;
-    left: 10%;
-    top: 15%;
-    width: 40%;
+  padding: 70px 0;
+  @media (max-width: 769px) {
+    margin-bottom: 35vh
+  }
+  @media (max-width: 544px) {
+    margin-bottom: 33vh;
+    height: 130vh;
+  }
+  p {
     bottom: 30px;
     font-size: 20px;
     text-transform: none !important;
-    @media (max-width: 768px) {
-      position: initial;
-      width: 100%;
-      padding-top: 5%;
-      text-align: center;
-    }
+    z-index: 2;
+    line-height: 28px;
+    font-weight: 300;
+  
   }
   .carosel-mob {
     padding-top: 8%;
+    position: absolute;
+    width: 100%;
     .slick-slide {
       padding: 0 40px;
       img {
@@ -229,10 +233,9 @@
   }
   .app-preview {
     position: absolute;
-    right: 14.7%;
-    width: 28%;
-    top: 14%;
-    z-index: 1;
+    right: 9.7%;
+    width: 78%;
+    top: 3%;
     .app-preview-wrap {
       width: 100%;
       height: 100%;
@@ -257,84 +260,6 @@
         img {
           width: 100%;
         }
-      }
-    }
-  }
-
-  // media query here
-  @media (max-width: 1024px) {
-    margin-bottom: 10vh;
-    .app-preview {
-      top: 20%;
-    }
-  }
-  @media (max-width: 768px) {
-    height: 86vh;
-    margin-bottom: 0;
-    .slick-slide {
-      height: inherit !important;
-    }
-    .app-preview {
-      right: 28%;
-      width: 45%;
-      top: 39%;
-    }
-  }
-  @media (max-width: 600px) {
-    height: inherit;
-    position: initial;
-    .app-preview {
-      width: 100%;
-      position: initial;
-    }
-  }
-  @media (max-width: 414px) {
-    .app-preview-wrap {
-      height: 50vh !important;
-    }
-    .iphone-mock-up {
-      height: 50vh !important;
-      width: 50vw !important;
-    }
-    .app-preview-wrap {
-      img {
-        position: relative;
-        left: 25%;
-      }
-    }
-
-    .slider-wrap {
-      position: absolute !important;
-      width: 44.8% !important;
-      height: 94% !important;
-      display: inline-block !important;
-      top: 3.0% !important;
-      left: 27.7% !important;
-      
-      img {
-        width: 44vw !important;
-        height: 100%;
-      }
-    }
-  }
-  @media (max-width: 375px) {
-    .app-preview-wrap {
-      img {
-        left: 25%;
-        position: relative;
-      }
-    }
-    .slider-wrap {
-      position: absolute !important;
-      width: 44.8% !important;
-      height: 94% !important;
-      display: inline-block !important;
-      top: 3.0% !important;
-      left: 27.7% !important;
-   
-      img {
-        width: 44vw !important;
-        height: 100%;
       }
     }
   }

@@ -2,6 +2,9 @@
   // height: 3200px;
   position: relative;
   padding: 70px 0 0;
+  h1 {
+    color: $theme-color;
+  }
   .blockchain {
     position: relative;
     left: -12px;
@@ -86,8 +89,10 @@
          transition: all .3s;
          transition-delay: .3s;
          p {
-           font-weight: 100;
+           font-weight: 300;
            margin-top: 5px;
+           color: #4E5175;
+           font-size: 18px;
          }
          div {
            display: table-cell;
@@ -424,9 +429,9 @@
             &.left {
               left: auto;
               transform: translate(-15px, -50%);
-              // right: -120% !important;
-              // width: 105% !important;
-              zoom: .8;
+              right: -120% !important;
+              width: 105% !important;
+              zoom: .7;
             }
           }
         }
@@ -435,7 +440,7 @@
             &.right {
               right: -120% !important;
               width: 105% !important;
-              zoom: .8;
+              zoom: .7;
             }
           }
         }
@@ -486,7 +491,6 @@
             svg {
               width: 15px;
               height: 15px;
-              fill: white;
               padding-top: 6px;
             }
           }

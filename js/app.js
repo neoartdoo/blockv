@@ -383,5 +383,4 @@ modalClose.click(function() {
   $.blurjs('reset');
 });
 
-var slider = $('.slider');
-slider.slick();
+

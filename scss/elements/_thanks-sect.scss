@@ -16,4 +16,9 @@
     width: 70px;
     margin-bottom: 50px;
   }
+  @media (max-width: 544px) {
+    .col-sm-6 {
+      margin-bottom: 60px;
+    }
+  }
 }

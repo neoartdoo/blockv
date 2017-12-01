@@ -402,88 +402,11 @@ button:focus, input:focus {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-LightOblique.eot");
-  src: url("../fonts/avenir/Avenir-LightOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-LightOblique.woff") format("woff"), url("../fonts/avenir/Avenir-LightOblique.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-MediumOblique.eot");
-  src: url("../fonts/avenir/Avenir-MediumOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-MediumOblique.woff") format("woff"), url("../fonts/avenir/Avenir-MediumOblique.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Avenir Book';
-  src: url("../fonts/avenir/Avenir-Book.eot");
-  src: url("../fonts/avenir/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Book.woff") format("woff"), url("../fonts/avenir/Avenir-Book.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-HeavyOblique.eot");
-  src: url("../fonts/avenir/Avenir-HeavyOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-HeavyOblique.woff") format("woff"), url("../fonts/avenir/Avenir-HeavyOblique.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-Oblique.eot");
-  src: url("../fonts/avenir/Avenir-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Oblique.woff") format("woff"), url("../fonts/avenir/Avenir-Oblique.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-Black.eot");
-  src: url("../fonts/avenir/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Black.woff") format("woff"), url("../fonts/avenir/Avenir-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-Heavy.eot");
-  src: url("../fonts/avenir/Avenir-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Heavy.woff") format("woff"), url("../fonts/avenir/Avenir-Heavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-Roman.eot");
-  src: url("../fonts/avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Roman.woff") format("woff"), url("../fonts/avenir/Avenir-Roman.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-Light.eot");
-  src: url("../fonts/avenir/Avenir-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Light.woff") format("woff"), url("../fonts/avenir/Avenir-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir Book';
-  src: url("../fonts/avenir/Avenir-BookOblique.eot");
-  src: url("../fonts/avenir/Avenir-BookOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-BookOblique.woff") format("woff"), url("../fonts/avenir/Avenir-BookOblique.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../fonts/avenir/Avenir-Medium.eot");
-  src: url("../fonts/avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-Medium.woff") format("woff"), url("../fonts/avenir/Avenir-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Avenir Black Oblique';
-  src: url("../fonts/avenir/Avenir-BlackOblique.eot");
-  src: url("../fonts/avenir/Avenir-BlackOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/avenir/Avenir-BlackOblique.woff") format("woff"), url("../fonts/avenir/Avenir-BlackOblique.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic; }
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-CondensedBoldeot");
+  src: url("../fonts/HelveticaNeue-CondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-CondensedBold.woff") format("woff"), url("../fonts/HelveticaNeue-CondensedBold.ttf") format("truetype"), url("../fonts/HelveticaNeue-CondensedBold.svg#HelveticaNeue-CondensedBold") format("svg");
+  font-stretch: condensed;
+  font-weight: 600; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Helvetica Neue', sans-serif;
@@ -510,13 +433,21 @@ h6 {
   font-size: 1rem; }
 
 .hero-title {
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin: 0;
-  font-weight: 300;
+  font-stretch: condensed;
+  font-weight: 600;
   text-transform: uppercase; }
   @media (max-width: 768px) {
     .hero-title {
       font-size: calc( 35px + (24 - 16) * (100vw - 400px) / (800 - 400)); } }
+
+.bold-condensed {
+  letter-spacing: 2px;
+  margin: 0;
+  font-stretch: condensed;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 .medium-f {
   font-weight: 500; }
@@ -1628,8 +1559,9 @@ h6 {
     padding-right: 30px; }
   .hero-sect p {
     color: #ffffff;
-    font-weight: 200;
-    font-size: 16px; }
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px; }
   .hero-sect .btn-primary {
     margin-right: 15px; }
   .hero-sect .countdown-wrapper {
@@ -2449,6 +2381,8 @@ input[type="button"].btn-block {
 .techstack-section {
   position: relative;
   padding: 70px 0 0; }
+  .techstack-section h1 {
+    color: #656aa1; }
   .techstack-section .blockchain {
     position: relative;
     left: -12px;
@@ -2518,8 +2452,10 @@ input[type="button"].btn-block {
         -webkit-transition-delay: .3s;
                 transition-delay: .3s; }
         .techstack .level .level-wrapper .icon-group p {
-          font-weight: 100;
-          margin-top: 5px; }
+          font-weight: 300;
+          margin-top: 5px;
+          color: #4E5175;
+          font-size: 18px; }
         .techstack .level .level-wrapper .icon-group div {
           display: table-cell;
           vertical-align: middle;
@@ -2726,11 +2662,13 @@ input[type="button"].btn-block {
       left: auto;
       -webkit-transform: translate(-15px, -50%);
               transform: translate(-15px, -50%);
-      zoom: .8; }
+      right: -120% !important;
+      width: 105% !important;
+      zoom: .7; }
     .techstack .level .level-wrapper.right .icon-group.right {
       right: -120% !important;
       width: 105% !important;
-      zoom: .8; } }
+      zoom: .7; } }
 
 @media (max-width: 540px) {
   .techstack .level {
@@ -2764,7 +2702,6 @@ input[type="button"].btn-block {
       .techstack .level .level-wrapper .icon-group i svg {
         width: 15px;
         height: 15px;
-        fill: white;
         padding-top: 6px; } }
 
 .vatoms-sect {
@@ -2951,24 +2888,27 @@ input[type="button"].btn-block {
   position: relative;
   background: #d8d9ef;
   height: 70vh;
-  margin-bottom: 35vh;
-  color: #656aa1; }
-  .devs-sect .hero-title {
-    position: absolute;
-    left: 10%;
-    top: 15%;
-    width: 40%;
+  margin-bottom: 20vh;
+  color: #656aa1;
+  padding: 70px 0; }
+  @media (max-width: 769px) {
+    .devs-sect {
+      margin-bottom: 35vh; } }
+  @media (max-width: 544px) {
+    .devs-sect {
+      margin-bottom: 33vh;
+      height: 130vh; } }
+  .devs-sect p {
     bottom: 30px;
     font-size: 20px;
-    text-transform: none !important; }
-    @media (max-width: 768px) {
-      .devs-sect .hero-title {
-        position: initial;
-        width: 100%;
-        padding-top: 5%;
-        text-align: center; } }
+    text-transform: none !important;
+    z-index: 2;
+    line-height: 28px;
+    font-weight: 300; }
   .devs-sect .carosel-mob {
-    padding-top: 8%; }
+    padding-top: 8%;
+    position: absolute;
+    width: 100%; }
     .devs-sect .carosel-mob .slick-slide {
       padding: 0 40px; }
       .devs-sect .carosel-mob .slick-slide img {
@@ -2978,10 +2918,9 @@ input[type="button"].btn-block {
         display: none; } }
   .devs-sect .app-preview {
     position: absolute;
-    right: 14.7%;
-    width: 28%;
-    top: 14%;
-    z-index: 1; }
+    right: 9.7%;
+    width: 78%;
+    top: 3%; }
     .devs-sect .app-preview .app-preview-wrap {
       width: 100%;
       height: 100%;
@@ -3002,61 +2941,6 @@ input[type="button"].btn-block {
           bottom: 2%; }
         .devs-sect .app-preview .app-preview-wrap .slider-wrap img {
           width: 100%; }
-  @media (max-width: 1024px) {
-    .devs-sect {
-      margin-bottom: 10vh; }
-      .devs-sect .app-preview {
-        top: 20%; } }
-  @media (max-width: 768px) {
-    .devs-sect {
-      height: 86vh;
-      margin-bottom: 0; }
-      .devs-sect .slick-slide {
-        height: inherit !important; }
-      .devs-sect .app-preview {
-        right: 28%;
-        width: 45%;
-        top: 39%; } }
-  @media (max-width: 600px) {
-    .devs-sect {
-      height: inherit;
-      position: initial; }
-      .devs-sect .app-preview {
-        width: 100%;
-        position: initial; } }
-  @media (max-width: 414px) {
-    .devs-sect .app-preview-wrap {
-      height: 50vh !important; }
-    .devs-sect .iphone-mock-up {
-      height: 50vh !important;
-      width: 50vw !important; }
-    .devs-sect .app-preview-wrap img {
-      position: relative;
-      left: 25%; }
-    .devs-sect .slider-wrap {
-      position: absolute !important;
-      width: 44.8% !important;
-      height: 94% !important;
-      display: inline-block !important;
-      top: 3.0% !important;
-      left: 27.7% !important; }
-      .devs-sect .slider-wrap img {
-        width: 44vw !important;
-        height: 100%; } }
-  @media (max-width: 375px) {
-    .devs-sect .app-preview-wrap img {
-      left: 25%;
-      position: relative; }
-    .devs-sect .slider-wrap {
-      position: absolute !important;
-      width: 44.8% !important;
-      height: 94% !important;
-      display: inline-block !important;
-      top: 3.0% !important;
-      left: 27.7% !important; }
-      .devs-sect .slider-wrap img {
-        width: 44vw !important;
-        height: 100%; } }
 
 .slider img {
   width: 100%; }
@@ -3457,18 +3341,29 @@ input[type="button"].btn-block {
   .thanks-sect img {
     width: 70px;
     margin-bottom: 50px; }
+  @media (max-width: 544px) {
+    .thanks-sect .col-sm-6 {
+      margin-bottom: 60px; } }
 
 .tryit-sect {
   height: 100vh;
   position: relative;
   color: #656aa1;
-  padding-top: 130px; }
+  padding: 50px 0; }
+  @media (max-width: 544px) {
+    .tryit-sect {
+      height: 160vh; } }
   .tryit-sect .app-preview {
     position: absolute;
     position: absolute;
     left: 18%;
     width: 33%;
     top: 17%; }
+    @media (max-width: 544px) {
+      .tryit-sect .app-preview {
+        top: 100vh;
+        width: 100%;
+        left: 14%; } }
     .tryit-sect .app-preview .app-preview-wrap {
       width: 80%;
       height: 100%;
@@ -3546,29 +3441,6 @@ input[type="button"].btn-block {
         z-index: -1; }
       .tryit-sect .steps li.active span, .tryit-sect .steps li:hover span {
         opacity: .8; }
-  @media (max-width: 1024px) {
-    .tryit-sect {
-      height: 50vh; } }
-  @media (max-width: 768px) {
-    .tryit-sect {
-      position: relative;
-      height: 70vh; }
-      .tryit-sect .app-preview {
-        width: 49%;
-        left: 7%;
-        top: 20%; }
-      .tryit-sect .col-md-5 {
-        position: absolute;
-        width: 49%;
-        top: 20%;
-        right: 1%;
-        zoom: .5; } }
-  @media (max-width: 414px) {
-    .tryit-sect {
-      z-index: -1; } }
-  @media (max-width: 375px) {
-    .tryit-sect .app-preview {
-      left: 7%; } }
 
 .ring-container {
   position: relative; }
@@ -3664,8 +3536,8 @@ input[type="button"].btn-block {
     text-align: right;
     padding-right: 15%; }
     .fmtb-sect .captions p {
-      font-size: 20px;
-      font-weight: 200; }
+      font-size: 19px;
+      font-weight: 300; }
   .fmtb-sect .particle-ball {
     position: absolute;
     height: 140%;
@@ -3696,12 +3568,12 @@ input[type="button"].btn-block {
   .icon-group a {
     color: #6ea1d2;
     text-transform: uppercase; }
-  .icon-group span {
+  .icon-group > span {
     width: 25%;
     display: inline-block;
     text-align: center;
     float: left; }
-    .icon-group span svg {
+    .icon-group > span svg {
       width: 60%;
       margin-top: 15px;
       height: auto; }
@@ -3710,8 +3582,8 @@ input[type="button"].btn-block {
     float: left; }
   .icon-group p {
     display: inline-block;
-    font-size: 20px;
-    font-weight: 200; }
+    font-size: 19px;
+    font-weight: 300; }
     .icon-group p.sub-title {
       font-size: 25px;
       margin-bottom: 0; }

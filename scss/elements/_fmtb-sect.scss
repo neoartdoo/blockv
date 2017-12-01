@@ -14,8 +14,8 @@
     text-align: right;
     padding-right: 15%;
     p {
-      font-size: 20px;
-      font-weight: 200;
+      font-size: 19px;
+      font-weight: 300;
     }
   }
   .particle-ball {
@@ -55,7 +55,7 @@
     color: #6ea1d2;
     text-transform: uppercase;
   }
-  span {
+  > span {
     width: 25%;
     display: inline-block;
     text-align: center;
@@ -72,8 +72,8 @@
   }
   p {
     display: inline-block;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 19px;
+    font-weight: 300;
     &.sub-title {
       font-size: 25px;
       margin-bottom: 0;

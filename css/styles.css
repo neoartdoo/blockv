@@ -2978,9 +2978,9 @@ input[type="button"].btn-block {
         display: none; } }
   .devs-sect .app-preview {
     position: absolute;
-    right: 18%;
-    width: 25%;
-    top: 6%;
+    right: 14.7%;
+    width: 28%;
+    top: 14%;
     z-index: 1; }
     .devs-sect .app-preview .app-preview-wrap {
       width: 100%;
@@ -2999,7 +2999,7 @@ input[type="button"].btn-block {
           padding: 0;
           height: 100% !important; }
         .devs-sect .app-preview .app-preview-wrap .slider-wrap .slick-dots {
-          bottom: -8%; }
+          bottom: 2%; }
         .devs-sect .app-preview .app-preview-wrap .slider-wrap img {
           width: 100%; }
   @media (max-width: 1024px) {

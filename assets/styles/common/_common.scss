@@ -1,0 +1,9 @@
+@import "fonts";
+@import "mixins";
+@import "typo";
+
+.container {
+  @media (min-width: 1400px) {
+    width: $container-xl-width;
+  }
+}

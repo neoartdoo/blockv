@@ -1,0 +1,14 @@
+body {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+@import "settings";
+@import "packages/bootstrap";
+@import "common/common";
+@import "partials/partials";
+@import "componets/components";

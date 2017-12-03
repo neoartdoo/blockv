@@ -1,0 +1,88 @@
+.feature-section {
+  @include media-breakpoint-up(lg) {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+
+  .section-title {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 100px;
+    }
+
+    @include media-breakpoint-only(md) {
+      margin-bottom: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .content-wrap {
+    @include media-breakpoint-down(xs) {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  .points-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 500;
+      color: $black;
+      margin-bottom: 25px;
+      padding-left: 50px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 10px;
+        transform: translateY(-50%);
+        background-color: $blue;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &.token-section {
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .points-list {
+      @include media-breakpoint-up(lg) {
+        padding-top: 80px;
+      }
+    }
+
+    .image-wrap {
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.contact-section {
+  @include media-breakpoint-up(lg) {
+    padding: 200px 0;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding: 150px 0;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    margin-bottom: 15px;
+  }
+
+  .small-title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.08px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    width: 650px;
+    margin: 0 auto;
+    max-width: 100%;
+
+    .form-control,
+    .input-group-btn,
+    .input-group-btn .btn {
+      height: 73px;
+      border-radius: 0;
+    }
+
+    .form-control {
+      @include placeholder(#c1c1c1);
+      font-weight: 400;
+      border-width: 0;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 32px;
+        letter-spacing: -2px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 18px;
+      }
+
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: none;
+        background-color: transparentize(#4e73a6, .94);
+      }
+    }
+
+    .input-group-btn .btn {
+      border: 0;
+
+      @include media-breakpoint-up(sm) {
+        width: 120px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        width: 80px;
+      }
+
+      @include button-variant(#fff, transparentize($green, .5), transparentize($green, .5));
+    }
+  }
+}

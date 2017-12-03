@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  flex: 0 0 auto;
+
+  .navbar-header {
+    .navbar-brand {
+      padding: 0;
+
+      @include media-breakpoint-down(xs) {
+        padding-left: 15px;
+      }
+
+      svg {
+        width: 132px;
+        height: 50px;
+      }
+    }
+  }
+
+  .navbar-header,
+  .navbar-nav {
+    @include media-breakpoint-up(sm) {
+      padding: 25px 0;
+    }
+  }
+
+  .navbar-header {
+    @include media-breakpoint-down(xs) {
+      padding: 10px 0;
+    }
+  }
+
+  .navbar {
+    @media (min-width: $screen-sm-min) {
+      background-color: transparent;
+      border-color: transparent;
+      border-radius: 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      background-color: $white;
+      border-color: $white;
+    }
+
+    .link {
+      a {
+        @include link-variant($black);
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

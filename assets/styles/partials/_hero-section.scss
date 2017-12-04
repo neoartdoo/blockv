@@ -2,6 +2,28 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
+
+  .page-title {
+    .featured {
+      position: relative;
+
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-left-gold.svg") no-repeat right top;
+        width: 1000px;
+        height: 1000px;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 1300px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 1000px;
+        }
+      }
+    }
+  }
 
   .main-content {
     flex: 1 1 auto;

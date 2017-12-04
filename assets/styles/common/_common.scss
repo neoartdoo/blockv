@@ -3,9 +3,3 @@
 @import "typo";
 @import "slick/slick";
 @import "slick/slick-theme";
-
-.container {
-  @media (min-width: 1400px) {
-    width: $container-xl-width;
-  }
-}

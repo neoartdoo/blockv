@@ -6113,10 +6113,6 @@ button.close {
     .slick-dots li.slick-active button:before {
       color: #656aa1; }
 
-@media (min-width: 1400px) {
-  .container {
-    width: 1340px; } }
-
 .header {
   width: 100%;
   flex: 0 0 auto; }
@@ -6164,7 +6160,6 @@ button.close {
     width: 132px;
     height: 53px; }
   .footer .design-by {
-    padding: 100px 0;
     font-size: 22px;
     color: #676767; }
     .footer .design-by a {
@@ -6179,18 +6174,42 @@ button.close {
         outline-offset: -2px; }
       .footer .design-by a, .footer .design-by a:hover, .footer .design-by a:focus, .footer .design-by a:active {
         text-decoration: underline; }
-  .footer .social-links a {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .footer .social-links a svg {
-      width: 30px;
-      height: 30px; }
+  .footer .social-links {
+    padding: 100px 0; }
+    .footer .social-links a {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .footer .social-links a svg {
+        width: 30px;
+        height: 30px; }
 
 .hero-section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow: hidden; }
+  .hero-section .page-title .featured {
+    position: relative; }
+    .hero-section .page-title .featured .decoration {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 100%;
+      z-index: -1;
+      background: url("../img/triagle-left-gold.svg") no-repeat right top;
+      width: 1000px;
+      height: 1000px; }
+      @media (max-width: 991px) {
+        .hero-section .page-title .featured .decoration {
+          display: none; } }
+      @media (min-width: 1200px) {
+        .hero-section .page-title .featured .decoration {
+          background-size: 1300px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section .page-title .featured .decoration {
+    background-size: 1000px; } }
   .hero-section .main-content {
     flex: 1 1 auto;
     display: flex;
@@ -6299,6 +6318,123 @@ button.close {
   .feature-section .content-wrap {
     margin: 0 auto; } }
 
+.feature-section.unified .section-title .featured {
+  position: relative; }
+  .feature-section.unified .section-title .featured .decoration {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    background: url("../img/triagle-left-gold.svg") no-repeat right top;
+    width: 1000px;
+    height: 1000px; }
+    @media (max-width: 991px) {
+      .feature-section.unified .section-title .featured .decoration {
+        display: none; } }
+    @media (min-width: 1200px) {
+      .feature-section.unified .section-title .featured .decoration {
+        background-size: 600px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature-section.unified .section-title .featured .decoration {
+    background-size: 510px; } }
+
+.feature-section.unified .app-preview-wrap .decoration {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  background: url("../img/triagle-right-blue.svg") no-repeat right top;
+  width: 600px;
+  height: 1000px;
+  right: auto;
+  left: 0;
+  top: 70%; }
+  @media (max-width: 991px) {
+    .feature-section.unified .app-preview-wrap .decoration {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .feature-section.unified .app-preview-wrap .decoration {
+      background-size: 600px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature-section.unified .app-preview-wrap .decoration {
+    background-size: 510px; } }
+
+.feature-section.try .section-title .featured {
+  position: relative; }
+  .feature-section.try .section-title .featured .decoration {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    background: url("../img/triagle-left-gold.svg") no-repeat right top;
+    width: 1000px;
+    height: 1000px; }
+    @media (max-width: 991px) {
+      .feature-section.try .section-title .featured .decoration {
+        display: none; } }
+    @media (min-width: 1200px) {
+      .feature-section.try .section-title .featured .decoration {
+        background-size: 450px;
+        right: -20px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature-section.try .section-title .featured .decoration {
+    background-size: 380px;
+    right: -10px; } }
+
+.feature-section.try .app-preview-wrap .decoration {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  background: url("../img/triagle-right-black.svg") no-repeat right top;
+  width: 600px;
+  height: 1000px;
+  right: auto;
+  left: 0;
+  top: 70%; }
+  @media (max-width: 991px) {
+    .feature-section.try .app-preview-wrap .decoration {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .feature-section.try .app-preview-wrap .decoration {
+      background-size: 600px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature-section.try .app-preview-wrap .decoration {
+    background-size: 510px; } }
+
+.feature-section.token-section .image-wrap {
+  position: relative; }
+  .feature-section.token-section .image-wrap .decoration {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    background: url("../img/triagle-left-blue.svg") no-repeat right top;
+    width: 1000px;
+    height: 1000px;
+    right: 0;
+    left: auto;
+    top: 70%; }
+    @media (max-width: 991px) {
+      .feature-section.token-section .image-wrap .decoration {
+        display: none; } }
+    @media (min-width: 1200px) {
+      .feature-section.token-section .image-wrap .decoration {
+        background-size: 900px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature-section.token-section .image-wrap .decoration {
+    background-size: 510px; } }
+
 .feature-section .points-list {
   list-style: none;
   padding-left: 0; }
@@ -6366,10 +6502,12 @@ button.close {
   padding: 70px 0 0; }
   .techstack-section .blockchain {
     position: relative;
-    left: -12px;
     white-space: nowrap; }
+    @media (min-width: 768px) {
+      .techstack-section .blockchain {
+        left: -12px; } }
   .techstack-section .thechstack-wrapper {
-    height: 100vh; }
+    min-height: 100vh; }
   .techstack-section.fixed .thechstack-wrapper {
     position: fixed;
     top: 70px;
@@ -6431,8 +6569,13 @@ button.close {
           .techstack-section .techstack .level .level-wrapper .icon-group p {
             font-weight: 300;
             margin-top: 5px;
-            color: #4E5175;
-            font-size: 18px; }
+            color: #4E5175; }
+            @media (min-width: 1200px) {
+              .techstack-section .techstack .level .level-wrapper .icon-group p {
+                font-size: 18px; } }
+            @media (max-width: 1199px) {
+              .techstack-section .techstack .level .level-wrapper .icon-group p {
+                font-size: 12px; } }
           .techstack-section .techstack .level .level-wrapper .icon-group div {
             display: table-cell;
             vertical-align: middle;
@@ -6635,7 +6778,11 @@ button.close {
         transform: translate(-15px, -50%);
         right: -120% !important;
         width: 105% !important;
-        zoom: .7; }
+        zoom: .7; } }
+    @media (max-width: 769px) and (max-width: 767px) {
+      .techstack-section .techstack .level .level-wrapper.left .icon-group.left {
+        right: -125% !important; } }
+  @media (max-width: 769px) {
       .techstack-section .techstack .level .level-wrapper.right .icon-group.right {
         right: -120% !important;
         width: 105% !important;
@@ -6677,10 +6824,20 @@ button.close {
   @media (max-width: 767px) {
     .techstack-section .icon-group {
       text-align: left !important; } }
+  .techstack-section i.icon {
+    position: relative; }
+    .techstack-section i.icon svg {
+      padding: 0 !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px !important;
+      height: 30px !important; }
 
 @media (min-width: 1200px) {
   .contact-section {
-    padding: 200px 0; } }
+    padding: 50px 0 250px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .contact-section {
@@ -6706,7 +6863,8 @@ button.close {
 .contact-section .contact-form {
   width: 650px;
   margin: 0 auto;
-  max-width: 100%; }
+  max-width: 100%;
+  position: relative; }
   .contact-section .contact-form .validation-message {
     position: absolute;
     left: 0;
@@ -6802,13 +6960,82 @@ button.close {
     .contact-section .contact-form .input-group-btn .btn .badge {
       color: rgba(6, 192, 150, 0.5);
       background-color: #fff; }
+  .contact-section .contact-form .decoration {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    background: url("../img/triagle-center-black.svg") no-repeat left top;
+    height: 2000px;
+    width: 2000px;
+    right: auto;
+    left: 0;
+    top: 110%;
+    background-size: 2000px; }
+    @media (max-width: 991px) {
+      .contact-section .contact-form .decoration {
+        display: none; } }
 
 .team-section {
   background-color: #002E4F;
   padding: 60px 0 120px; }
   .team-section .section-title {
     color: #fff;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0; }
+    .team-section .section-title .title {
+      position: relative; }
+    .team-section .section-title .decoration {
+      max-height: 0;
+      transition: max-height 2s linear; }
+      .team-section .section-title .decoration.animated {
+        max-height: 2000px; }
+    .team-section .section-title.team .decoration {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 100%;
+      z-index: -1;
+      background: url("../img/triagle-left-white.svg") no-repeat right top;
+      width: 1000px;
+      height: 1000px;
+      left: auto;
+      right: 0;
+      top: 100%; }
+      @media (max-width: 991px) {
+        .team-section .section-title.team .decoration {
+          display: none; } }
+      @media (min-width: 1200px) {
+        .team-section .section-title.team .decoration {
+          background-size: 1100px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .team-section .section-title.team .decoration {
+    background-size: 850px; } }
+    .team-section .section-title.advisors .decoration {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 100%;
+      z-index: -1;
+      background: url("../img/triagle-left-white.svg") no-repeat right top;
+      width: 1000px;
+      height: 1000px;
+      left: auto;
+      right: 0;
+      top: 100%; }
+      @media (max-width: 991px) {
+        .team-section .section-title.advisors .decoration {
+          display: none; } }
+      @media (min-width: 1200px) {
+        .team-section .section-title.advisors .decoration {
+          background-size: 790px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .team-section .section-title.advisors .decoration {
+    background-size: 700px; } }
   .team-section .team-row,
   .team-section .team-advisors {
     max-width: 100%;

@@ -1,6 +1,6 @@
 .contact-section {
   @include media-breakpoint-up(lg) {
-    padding: 200px 0;
+    padding: 50px 0 250px;
   }
 
   @include media-breakpoint-only(md) {
@@ -30,6 +30,7 @@
     width: 650px;
     margin: 0 auto;
     max-width: 100%;
+    position: relative;
 
     .validation-message {
       position: absolute;
@@ -116,6 +117,17 @@
       }
 
       @include button-variant(#fff, transparentize($green, .5), transparentize($green, .5));
+    }
+
+    .decoration {
+      @include decoration;
+      background: url("../img/triagle-center-black.svg") no-repeat left top;
+      height: 2000px;
+      width: 2000px;
+      right: auto;
+      left: 0;
+      top: 110%;
+      background-size: 2000px;
     }
   }
 }

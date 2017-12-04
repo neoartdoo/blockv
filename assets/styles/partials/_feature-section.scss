@@ -40,6 +40,118 @@
     }
   }
 
+  &.unified {
+    .section-title {
+      .featured {
+        position: relative;
+
+        .decoration {
+          @include decoration;
+          background: url("../img/triagle-left-gold.svg") no-repeat right top;
+          width: 1000px;
+          height: 1000px;
+
+          @include media-breakpoint-up(lg) {
+            background-size: 600px;
+          }
+
+          @include media-breakpoint-only(md) {
+            background-size: 510px;
+          }
+        }
+      }
+    }
+
+    .app-preview-wrap {
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-right-blue.svg") no-repeat right top;
+        width: 600px;
+        height: 1000px;
+        right: auto;
+        left: 0;
+        top: 70%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 600px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+      }
+    }
+  }
+
+  &.try {
+    .section-title {
+      .featured {
+        position: relative;
+
+        .decoration {
+          @include decoration;
+          background: url("../img/triagle-left-gold.svg") no-repeat right top;
+          width: 1000px;
+          height: 1000px;
+
+          @include media-breakpoint-up(lg) {
+            background-size: 450px;
+            right: -20px;
+          }
+
+          @include media-breakpoint-only(md) {
+            background-size: 380px;
+            right: -10px;
+          }
+        }
+      }
+    }
+
+    .app-preview-wrap {
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-right-black.svg") no-repeat right top;
+        width: 600px;
+        height: 1000px;
+        right: auto;
+        left: 0;
+        top: 70%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 600px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+      }
+    }
+  }
+
+  &.token-section {
+    .image-wrap {
+      position: relative;
+
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-left-blue.svg") no-repeat right top;
+        width: 1000px;
+        height: 1000px;
+        right: 0;
+        left: auto;
+        top: 70%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 900px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+      }
+    }
+  }
+
   .points-list {
     list-style: none;
     padding-left: 0;

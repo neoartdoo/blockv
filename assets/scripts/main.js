@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  setTimeout(function(){
+    document.getElementById("hero-video").play();
+  }, 2000);
+
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 

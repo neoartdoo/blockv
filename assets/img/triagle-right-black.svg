@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="748px" height="778px" viewBox="0 0 748 778" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle Copy 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="63.1020512%" y1="16.4743781%" x2="26.2386669%" y2="60.6024755%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="844.788762 2718.22522 1214.49709 2835.57873 570.966641 3548.32496"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.37743433">
+        <g id="Desktop-HD-Copy-6" transform="translate(-528.000000, -2715.000000)">
+            <g id="Rectangle-Copy-9" transform="translate(892.731864, 3133.275091) scale(-1, 1) rotate(9.000000) translate(-892.731864, -3133.275091) ">
+                <use fill-opacity="0.278192935" fill="#1FD2D2" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -7270,4 +7270,5 @@ button.close {
     @media (max-width: 767px) {
       .roadmap-section .decoration {
         background-size: 300px;
-        width: 300px; } }
+        width: 300px;
+        top: 14%; } }

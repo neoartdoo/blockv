@@ -1,0 +1,116 @@
+.roadmap-section {
+  padding: 100px 0;
+
+  .roadmap-list {
+    width: 100%;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: space-between;
+    }
+
+    @include media-breakpoint-only(md) {
+      padding: 0 100px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include media-breakpoint-between(sm, md) {
+      justify-content: space-around;
+    }
+
+    .list-item {
+      width: 250px;
+
+      @include media-breakpoint-down(xs) {
+        margin: 0 auto 40px;
+      }
+
+      &.active {
+        .block {
+          background-color: #E8C996;
+        }
+
+        .content {
+          opacity: 1;
+        }
+      }
+
+      .block {
+        width: 250px;
+        height: 250px;
+        background-color: transparentize(#002E4F, .76);
+        padding: 1px 20px 0;
+        transition: background-color .3s ease;
+      }
+
+      .title {
+        font-size: 62px;
+        line-height: 56px;
+        letter-spacing: -2px;
+        color: $white;
+        font-weight: 700;
+      }
+
+      .content {
+        padding-top: 30px;
+        opacity: 0;
+        transition: opacity .3s ease;
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+
+          li {
+            position: relative;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 25px;
+            padding-left: 40px;
+
+            &:after {
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 10px;
+              transform: translateY(-50%);
+              background-color: $blue;
+              width: 17px;
+              height: 17px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .decoration {
+    @include decoration;
+    background: url("../img/triagle-center-gold.svg") no-repeat right top;
+    height: 500px;
+    right: 0;
+    left: 0;
+    top: 65%;
+
+    @include media-breakpoint-up(md) {
+      background-size: 800px;
+      width: 800px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      background-size: 600px;
+      width: 600px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      background-size: 300px;
+      width: 300px;
+    }
+  }
+}

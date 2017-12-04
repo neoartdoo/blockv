@@ -51,4 +51,17 @@ $(document).ready(function() {
 
   $(".slider-apps").slick({"dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000, "arrows":false});
   $(".slider-try-it").slick({"dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000, "arrows":false, "fade": true, "cssEase": "linear"});
+
+  var roadmapItemsActive = 0;
+  var roadmapItems = $(".roadmap-list").children();
+
+  setInterval(function() {
+    $(roadmapItems[roadmapItemsActive]).removeClass('active');
+    if(roadmapItemsActive === roadmapItems.length - 2) {
+      roadmapItemsActive = 0;
+    } else {
+      roadmapItemsActive++;
+    }
+    $(roadmapItems[roadmapItemsActive]).addClass('active')
+  }, 1000);
 });

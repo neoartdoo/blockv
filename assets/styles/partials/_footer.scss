@@ -1,0 +1,41 @@
+.footer {
+  padding: 70px 0;
+
+  .footer-logo {
+    svg {
+      width: 132px;
+      height: 53px;
+    }
+  }
+
+  .design-by {
+    font-size: 22px;
+    color: $gray-dark;
+
+    a {
+      @include link-variant($gray-dark);
+
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social-links {
+    padding: 100px 0;
+
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

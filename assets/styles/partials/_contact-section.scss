@@ -1,0 +1,133 @@
+.contact-section {
+  @include media-breakpoint-up(lg) {
+    padding: 50px 0 250px;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding: 150px 0;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    margin-bottom: 15px;
+  }
+
+  .small-title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.08px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    width: 650px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+
+    .validation-message {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      background-color: #00b087;
+      overflow: hidden;
+      transition: all .3s ease;
+      z-index: 2;
+      font-weight: 300;
+      line-height: 73px;
+      font-size: 16px;
+      color: $white;
+
+      span {
+        opacity: 0;
+        transition: opacity .3s ease 1s;
+      }
+    }
+
+    .input-group {
+      position: relative;
+      z-index: 0;
+
+      &.invalid {
+        input {
+          background-color: transparentize(#cd0000, .5);
+        }
+      }
+
+      &.valid {
+        .validation-message {
+          width: 100%;
+
+          span {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .form-control,
+    .input-group-btn,
+    .input-group-btn .btn {
+      height: 73px;
+      border-radius: 0;
+    }
+
+    .form-control {
+      @include placeholder(#c1c1c1);
+      font-weight: 400;
+      border-width: 0;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 32px;
+        letter-spacing: -2px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 18px;
+      }
+
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: none;
+        background-color: transparentize(#4e73a6, .94);
+      }
+    }
+
+    .input-group-btn .btn {
+      border: 0;
+
+      @include media-breakpoint-up(sm) {
+        width: 120px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        width: 80px;
+      }
+
+      @include button-variant(#fff, transparentize($green, .5), transparentize($green, .5));
+    }
+
+    .decoration {
+      @include decoration;
+      background: url("../img/triagle-center-black.svg") no-repeat left top;
+      height: 2000px;
+      width: 2000px;
+      right: auto;
+      left: 0;
+      top: 110%;
+      background-size: 2000px;
+    }
+  }
+}

@@ -1,0 +1,239 @@
+.feature-section {
+  @include media-breakpoint-up(lg) {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+
+  .section-title {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 100px;
+    }
+
+    @include media-breakpoint-only(md) {
+      margin-bottom: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 50px;
+    }
+  }
+
+  .content-wrap {
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+    }
+  }
+
+  &.unified {
+    .section-title {
+      .featured {
+        position: relative;
+
+        .decoration {
+          @include decoration;
+          background: url("../img/triagle-left-gold.svg") no-repeat right top;
+          width: 1000px;
+          height: 1000px;
+
+          @include media-breakpoint-up(lg) {
+            background-size: 600px;
+          }
+
+          @include media-breakpoint-only(md) {
+            background-size: 510px;
+          }
+        }
+      }
+    }
+
+    .app-preview-wrap {
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-right-blue.svg") no-repeat right top;
+        width: 600px;
+        height: 1000px;
+        right: auto;
+        left: 0;
+        top: 70%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 600px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+      }
+    }
+  }
+
+  &.try {
+    .section-title {
+      .featured {
+        position: relative;
+
+        .decoration {
+          @include decoration;
+          background: url("../img/triagle-left-gold.svg") no-repeat right top;
+          width: 1000px;
+          height: 1000px;
+
+          @include media-breakpoint-up(lg) {
+            background-size: 450px;
+            right: -20px;
+          }
+
+          @include media-breakpoint-only(md) {
+            background-size: 380px;
+            right: -10px;
+          }
+        }
+      }
+    }
+
+    .app-preview-wrap {
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-right-black.svg") no-repeat right top;
+        width: 600px;
+        height: 1000px;
+        right: auto;
+        left: 0;
+        top: 70%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 600px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+      }
+    }
+  }
+
+  &.token-section {
+    .image-wrap {
+      position: relative;
+
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-left-blue.svg") no-repeat right top;
+        width: 1000px;
+        height: 1000px;
+        right: 0;
+        left: auto;
+        top: 70%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 900px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+      }
+    }
+  }
+
+  .points-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 500;
+      color: $black;
+      margin-bottom: 25px;
+      padding-left: 50px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 10px;
+        transform: translateY(-50%);
+        background-color: $blue;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &.token-section {
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .points-list {
+      @include media-breakpoint-up(lg) {
+        padding-top: 80px;
+      }
+    }
+
+    .image-wrap {
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .app-preview-wrap {
+    position: relative;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      width: 400px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 280px;
+    }
+
+    .slider-wrap {
+      position: absolute;
+
+      @include media-breakpoint-up(md) {
+        width: 269px;
+        top: 73px;
+        left: 72px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 182px;
+        top: 58px;
+        left: 54px;
+      }
+    }
+
+    .slick-dots {
+      @include media-breakpoint-up(md) {
+        bottom: -110px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        bottom: -90px;
+      }
+    }
+
+  }
+}

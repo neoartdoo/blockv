@@ -1,0 +1,226 @@
+.team-section {
+  background-color: #002E4F;
+  padding: 60px 0 120px;
+
+  .section-title {
+    color: $white;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0;
+
+    .title {
+      position: relative;
+    }
+
+    .decoration {
+      max-height: 0;
+      transition: max-height 2s linear;
+
+      &.animated {
+        max-height: 2000px;
+      }
+    }
+
+    &.team {
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-left-white.svg") no-repeat right top;
+        width: 1000px;
+        height: 1000px;
+        left: auto;
+        right: 0;
+        top: 100%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 1100px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 850px;
+        }
+      }
+    }
+
+    &.advisors {
+      .decoration {
+        @include decoration;
+        background: url("../img/triagle-left-white.svg") no-repeat right top;
+        width: 1000px;
+        height: 1000px;
+        left: auto;
+        right: 0;
+        top: 100%;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 790px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 700px;
+        }
+      }
+    }
+  }
+
+  .team-row,
+  .team-advisors {
+    max-width: 100%;
+    width: 1100px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  .team-row {
+    .col {
+      margin-bottom: 60px;
+
+      @include media-breakpoint-up(lg) {
+        width: 290px;
+
+        &:not(:last-child) {
+          margin-right: 60px;
+        }
+      }
+
+      @include media-breakpoint-only(md) {
+        width: 250px;
+
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+      }
+
+      @include media-breakpoint-only(sm) {
+        width: 200px;
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  .social-icons {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 4;
+
+    a {
+      @include link-variant($white);
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $white;
+      }
+    }
+  }
+
+  .team-advisors {
+    @include media-breakpoint-up(lg) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .col {
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up(lg) {
+        width: 190px;
+        margin-right: 25px;
+        margin-left: 25px;
+      }
+
+      @include media-breakpoint-only(md) {
+        width: 175px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+      @include media-breakpoint-only(sm) {
+        width: 200px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+    }
+  }
+
+  .col {
+    position: relative;
+    z-index: 0;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 16px;
+      left: -16px;
+      border: 1px solid #979797;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:after {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(101, 106, 161, 0.2);
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      transition: all .4s;
+      z-index: 3;
+    }
+
+    &:hover {
+      &:after {
+        background-color: rgba(101, 106, 161, 0.8);
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto 50px;
+      width: 300px;
+      max-width: 100%;
+    }
+
+    .member-name {
+      font-size: 16px;
+      font-weight: 100;
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      color: $white;
+      z-index: 4;
+      letter-spacing: 2px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .team-member-photo {
+      width: 100%;
+      border: none;
+      filter: grayscale(100%);
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+  }
+}

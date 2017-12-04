@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+  perspective: unset;
+}
+
+@import "settings";
+@import "packages/bootstrap";
+@import "common/common";
+@import "partials/partials";
+@import "componets/components";

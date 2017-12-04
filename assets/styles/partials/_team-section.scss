@@ -12,15 +12,6 @@
       position: relative;
     }
 
-    .decoration {
-      max-height: 0;
-      transition: max-height 2s linear;
-
-      &.animated {
-        max-height: 2000px;
-      }
-    }
-
     &.team {
       .decoration {
         @include decoration;

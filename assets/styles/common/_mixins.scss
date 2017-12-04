@@ -21,10 +21,6 @@
   right: 0;
   top: 100%;
   z-index: -1;
-
-  @media (max-width: $screen-sm-max) {
-    display: none;
-  }
 }
 
 $grid-breakpoints: (

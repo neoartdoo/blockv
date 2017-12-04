@@ -1,8 +1,11 @@
 @charset "UTF-8";
+body,
+html {
+  overflow-x: hidden; }
+
 body {
   width: 100%;
   margin: 0;
-  overflow-x: hidden;
   backface-visibility: hidden;
   perspective: unset; }
 
@@ -6187,8 +6190,7 @@ button.close {
 .hero-section {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
   .hero-section .page-title .featured {
     position: relative; }
     .hero-section .page-title .featured .decoration {
@@ -6200,9 +6202,6 @@ button.close {
       background: url("../img/triagle-left-gold.svg") no-repeat right top;
       width: 1000px;
       height: 1000px; }
-      @media (max-width: 991px) {
-        .hero-section .page-title .featured .decoration {
-          display: none; } }
       @media (min-width: 1200px) {
         .hero-section .page-title .featured .decoration {
           background-size: 1300px; } }
@@ -6210,6 +6209,13 @@ button.close {
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero-section .page-title .featured .decoration {
     background-size: 1000px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section .page-title .featured .decoration {
+    background-size: 1000px; } }
+      @media (max-width: 767px) {
+        .hero-section .page-title .featured .decoration {
+          background-size: 780px; } }
   .hero-section .main-content {
     flex: 1 1 auto;
     display: flex;
@@ -6238,20 +6244,32 @@ button.close {
         bottom: 0;
         height: 100%;
         width: 100%; }
-    .hero-section .content-wrap .shadow {
+    .hero-section .content-wrap .decoration {
       position: absolute;
-      top: 101%;
+      display: block;
+      right: 0;
+      top: 100%;
       z-index: -1;
-      overflow: hidden; }
-      @media (max-width: 991px) {
-        .hero-section .content-wrap .shadow {
-          display: none; } }
-      @media (min-width: 1300px) {
-        .hero-section .content-wrap .shadow {
-          left: 100px; } }
-      @media (min-width: 1200px) and (max-width: 1299px) {
-        .hero-section .content-wrap .shadow {
-          left: 50px; } }
+      background: url("../img/triagle-hero.svg") no-repeat left top;
+      width: 2000px;
+      height: 2000px;
+      right: auto;
+      left: 0;
+      top: 102%; }
+      @media (min-width: 1200px) {
+        .hero-section .content-wrap .decoration {
+          background-size: 1700px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section .content-wrap .decoration {
+    background-size: 1400px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section .content-wrap .decoration {
+    background-size: 2250px; } }
+      @media (max-width: 767px) {
+        .hero-section .content-wrap .decoration {
+          background-size: 1900px; } }
 
 .stats-block {
   position: relative;
@@ -6329,9 +6347,6 @@ button.close {
     background: url("../img/triagle-left-gold.svg") no-repeat right top;
     width: 1000px;
     height: 1000px; }
-    @media (max-width: 991px) {
-      .feature-section.unified .section-title .featured .decoration {
-        display: none; } }
     @media (min-width: 1200px) {
       .feature-section.unified .section-title .featured .decoration {
         background-size: 600px; } }
@@ -6339,6 +6354,13 @@ button.close {
 @media (min-width: 992px) and (max-width: 1199px) {
   .feature-section.unified .section-title .featured .decoration {
     background-size: 510px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-section.unified .section-title .featured .decoration {
+    background-size: 400px; } }
+    @media (max-width: 767px) {
+      .feature-section.unified .section-title .featured .decoration {
+        background-size: 340px; } }
 
 .feature-section.unified .app-preview-wrap .decoration {
   position: absolute;
@@ -6352,9 +6374,6 @@ button.close {
   right: auto;
   left: 0;
   top: 70%; }
-  @media (max-width: 991px) {
-    .feature-section.unified .app-preview-wrap .decoration {
-      display: none; } }
   @media (min-width: 1200px) {
     .feature-section.unified .app-preview-wrap .decoration {
       background-size: 600px; } }
@@ -6362,6 +6381,15 @@ button.close {
 @media (min-width: 992px) and (max-width: 1199px) {
   .feature-section.unified .app-preview-wrap .decoration {
     background-size: 510px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-section.unified .app-preview-wrap .decoration {
+    background-size: 500px;
+    left: -100px; } }
+  @media (max-width: 767px) {
+    .feature-section.unified .app-preview-wrap .decoration {
+      background-size: 510px;
+      left: -100px; } }
 
 .feature-section.try .section-title .featured {
   position: relative; }
@@ -6374,9 +6402,6 @@ button.close {
     background: url("../img/triagle-left-gold.svg") no-repeat right top;
     width: 1000px;
     height: 1000px; }
-    @media (max-width: 991px) {
-      .feature-section.try .section-title .featured .decoration {
-        display: none; } }
     @media (min-width: 1200px) {
       .feature-section.try .section-title .featured .decoration {
         background-size: 450px;
@@ -6386,6 +6411,15 @@ button.close {
   .feature-section.try .section-title .featured .decoration {
     background-size: 380px;
     right: -10px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-section.try .section-title .featured .decoration {
+    background-size: 260px;
+    right: -10px; } }
+    @media (max-width: 767px) {
+      .feature-section.try .section-title .featured .decoration {
+        background-size: 260px;
+        right: -10px; } }
 
 .feature-section.try .app-preview-wrap .decoration {
   position: absolute;
@@ -6398,10 +6432,7 @@ button.close {
   height: 1000px;
   right: auto;
   left: 0;
-  top: 70%; }
-  @media (max-width: 991px) {
-    .feature-section.try .app-preview-wrap .decoration {
-      display: none; } }
+  top: 60%; }
   @media (min-width: 1200px) {
     .feature-section.try .app-preview-wrap .decoration {
       background-size: 600px; } }
@@ -6409,6 +6440,13 @@ button.close {
 @media (min-width: 992px) and (max-width: 1199px) {
   .feature-section.try .app-preview-wrap .decoration {
     background-size: 510px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-section.try .app-preview-wrap .decoration {
+    background-size: 510px; } }
+  @media (max-width: 767px) {
+    .feature-section.try .app-preview-wrap .decoration {
+      background-size: 580px; } }
 
 .feature-section.token-section .image-wrap {
   position: relative; }
@@ -6424,16 +6462,9 @@ button.close {
     right: 0;
     left: auto;
     top: 70%; }
-    @media (max-width: 991px) {
-      .feature-section.token-section .image-wrap .decoration {
-        display: none; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       .feature-section.token-section .image-wrap .decoration {
         background-size: 900px; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .feature-section.token-section .image-wrap .decoration {
-    background-size: 510px; } }
 
 .feature-section .points-list {
   list-style: none;
@@ -6849,7 +6880,7 @@ button.close {
 
 @media (max-width: 767px) {
   .contact-section {
-    padding: 50px 0; } }
+    padding: 50px 0 100px; } }
 
 .contact-section .section-title {
   margin-bottom: 15px; }
@@ -6973,9 +7004,6 @@ button.close {
     left: 0;
     top: 110%;
     background-size: 2000px; }
-    @media (max-width: 991px) {
-      .contact-section .contact-form .decoration {
-        display: none; } }
 
 .team-section {
   background-color: #002E4F;
@@ -6987,11 +7015,6 @@ button.close {
     z-index: 0; }
     .team-section .section-title .title {
       position: relative; }
-    .team-section .section-title .decoration {
-      max-height: 0;
-      transition: max-height 2s linear; }
-      .team-section .section-title .decoration.animated {
-        max-height: 2000px; }
     .team-section .section-title.team .decoration {
       position: absolute;
       display: block;
@@ -7004,9 +7027,6 @@ button.close {
       left: auto;
       right: 0;
       top: 100%; }
-      @media (max-width: 991px) {
-        .team-section .section-title.team .decoration {
-          display: none; } }
       @media (min-width: 1200px) {
         .team-section .section-title.team .decoration {
           background-size: 1100px; } }
@@ -7026,9 +7046,6 @@ button.close {
       left: auto;
       right: 0;
       top: 100%; }
-      @media (max-width: 991px) {
-        .team-section .section-title.advisors .decoration {
-          display: none; } }
       @media (min-width: 1200px) {
         .team-section .section-title.advisors .decoration {
           background-size: 790px; } }

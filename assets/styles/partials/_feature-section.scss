@@ -58,6 +58,14 @@
           @include media-breakpoint-only(md) {
             background-size: 510px;
           }
+
+          @include media-breakpoint-only(sm) {
+            background-size: 400px;
+          }
+
+          @include media-breakpoint-down(xs) {
+            background-size: 340px;
+          }
         }
       }
     }
@@ -78,6 +86,16 @@
 
         @include media-breakpoint-only(md) {
           background-size: 510px;
+        }
+
+        @include media-breakpoint-only(sm) {
+          background-size: 500px;
+          left: -100px;
+        }
+
+        @include media-breakpoint-down(xs) {
+          background-size: 510px;
+          left: -100px;
         }
       }
     }
@@ -103,6 +121,16 @@
             background-size: 380px;
             right: -10px;
           }
+
+          @include media-breakpoint-only(sm) {
+            background-size: 260px;
+            right: -10px;
+          }
+
+          @include media-breakpoint-down(xs) {
+            background-size: 260px;
+            right: -10px;
+          }
         }
       }
     }
@@ -115,7 +143,7 @@
         height: 1000px;
         right: auto;
         left: 0;
-        top: 70%;
+        top: 60%;
 
         @include media-breakpoint-up(lg) {
           background-size: 600px;
@@ -123,6 +151,14 @@
 
         @include media-breakpoint-only(md) {
           background-size: 510px;
+        }
+
+        @include media-breakpoint-only(sm) {
+          background-size: 510px;
+        }
+
+        @include media-breakpoint-down(xs) {
+          background-size: 580px;
         }
       }
     }
@@ -141,12 +177,8 @@
         left: auto;
         top: 70%;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(md) {
           background-size: 900px;
-        }
-
-        @include media-breakpoint-only(md) {
-          background-size: 510px;
         }
       }
     }

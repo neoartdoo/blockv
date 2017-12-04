@@ -55,6 +55,21 @@
     }
   }
 
+  .social-icons {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 4;
+
+    a {
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $white;
+      }
+    }
+  }
+
   .team-advisors {
     @include media-breakpoint-up(lg) {
       padding-left: 50px;

@@ -5970,12 +5970,12 @@ button.close {
       outline-offset: -2px; }
 
 .footer {
-  padding-top: 70px; }
+  padding: 70px 0; }
   .footer .footer-logo svg {
     width: 132px;
     height: 53px; }
   .footer .design-by {
-    padding: 120px 0;
+    padding: 100px 0;
     font-size: 22px;
     color: #676767; }
     .footer .design-by a {
@@ -5990,6 +5990,13 @@ button.close {
         outline-offset: -2px; }
       .footer .design-by a, .footer .design-by a:hover, .footer .design-by a:focus, .footer .design-by a:active {
         text-decoration: underline; }
+  .footer .social-links a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .footer .social-links a svg {
+      width: 30px;
+      height: 30px; }
 
 .hero-section {
   display: flex;
@@ -6599,6 +6606,15 @@ button.close {
     width: 200px; }
     .team-section .team-row .col:not(:last-child) {
       margin-right: 40px; } }
+  .team-section .social-icons {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 4; }
+    .team-section .social-icons a svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff; }
   @media (min-width: 1200px) {
     .team-section .team-advisors {
       padding-left: 50px;

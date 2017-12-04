@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 70px;
+  padding: 70px 0;
 
   .footer-logo {
     svg {
@@ -9,7 +9,7 @@
   }
 
   .design-by {
-    padding: 120px 0;
+    padding: 100px 0;
     font-size: 22px;
     color: $gray-dark;
 
@@ -21,6 +21,19 @@
       &:focus,
       &:active {
         text-decoration: underline;
+      }
+    }
+  }
+
+  .social-links {
+    a {
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      svg {
+        width: 30px;
+        height: 30px;
       }
     }
   }

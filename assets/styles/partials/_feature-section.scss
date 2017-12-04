@@ -223,6 +223,10 @@
     }
 
     .image-wrap {
+      img {
+        width: 100%;
+      }
+
       @include media-breakpoint-down(xs) {
         margin-bottom: 40px;
       }

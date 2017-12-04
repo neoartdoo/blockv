@@ -195,6 +195,12 @@
       max-width: 100%;
     }
 
+    &.empty {
+      margin-bottom: 0;
+      height: 0;
+      opacity: 0;
+    }
+
     .member-name {
       font-size: 16px;
       font-weight: 100;

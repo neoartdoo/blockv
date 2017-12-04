@@ -24,9 +24,38 @@
 
     .list-item {
       width: 250px;
+      position: relative;
 
       @include media-breakpoint-down(xs) {
         margin: 0 auto 40px;
+      }
+
+      &:after {
+        opacity: 0;
+        transition: opacity .3s ease;
+        @include decoration;
+        content: '';
+        background: url("../img/triagle-center-gold.svg") no-repeat right top;
+        height: 500px;
+        right: -20px;
+        left: auto;
+        top: 45%;
+
+        @include media-breakpoint-up(md) {
+          background-size: 800px;
+          width: 800px;
+        }
+
+        @include media-breakpoint-only(sm) {
+          background-size: 600px;
+          width: 600px;
+        }
+
+        @include media-breakpoint-down(xs) {
+          background-size: 300px;
+          width: 300px;
+          top: 70%;
+        }
       }
 
       &.active {
@@ -35,6 +64,10 @@
         }
 
         .content {
+          opacity: 1;
+        }
+
+        &:after {
           opacity: 1;
         }
       }
@@ -87,31 +120,6 @@
           }
         }
       }
-    }
-  }
-
-  .decoration {
-    @include decoration;
-    background: url("../img/triagle-center-gold.svg") no-repeat right top;
-    height: 500px;
-    right: 0;
-    left: 0;
-    top: 65%;
-
-    @include media-breakpoint-up(md) {
-      background-size: 800px;
-      width: 800px;
-    }
-
-    @include media-breakpoint-only(sm) {
-      background-size: 600px;
-      width: 600px;
-    }
-
-    @include media-breakpoint-down(xs) {
-      background-size: 300px;
-      width: 300px;
-      top: 14%;
     }
   }
 }

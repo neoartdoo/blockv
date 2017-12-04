@@ -10,8 +10,14 @@
     position: relative;
     white-space: nowrap;
 
-    @include media-breakpoint-up(sm) {
-      left: -12px;
+    @include media-breakpoint-only(md) {
+      white-space: normal;
+      width: 270px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      white-space: normal;
+      width: 230px;
     }
   }
   .thechstack-wrapper {

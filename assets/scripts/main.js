@@ -17,10 +17,20 @@ $(document).ready(function() {
 
   };
 
+  var heroVideo = $('#hero-video');
+
   // Run video after 2s
   setTimeout(function(){
     document.getElementById("hero-video").play();
   }, 2000);
+
+  $('.video-wrap .play').click(function () {
+    heroVideo.prop('muted', false);
+  })
+
+  $('.video-wrap .mute-icon').click(function () {
+    heroVideo.prop('muted', true);
+  })
 
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
@@ -79,7 +89,7 @@ $(document).ready(function() {
   setInterval(function() {
     if(isVisible) {
       $(roadmapItems[roadmapItemsActive]).removeClass('active');
-      if(roadmapItemsActive === roadmapItems.length - 2) {
+      if(roadmapItemsActive === roadmapItems.length - 1) {
         roadmapItemsActive = 0;
       } else {
         roadmapItemsActive++;

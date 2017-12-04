@@ -107,6 +107,7 @@
 
     .input-group-btn .btn {
       border: 0;
+      position: relative;
 
       @include media-breakpoint-up(sm) {
         width: 120px;
@@ -117,6 +118,16 @@
       }
 
       @include button-variant(#fff, transparentize($green, .5), transparentize($green, .5));
+
+      svg {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        fill: #fff;
+      }
     }
 
     .decoration {

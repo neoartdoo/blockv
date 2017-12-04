@@ -1,4 +1,23 @@
 $(document).ready(function() {
+  $.fn.isOnScreen = function(){
+    var win = $(window);
+
+    var viewport = {
+      top : win.scrollTop(),
+      left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+  };
+
+  // Run video after 2s
   setTimeout(function(){
     document.getElementById("hero-video").play();
   }, 2000);
@@ -12,13 +31,6 @@ $(document).ready(function() {
   });
 
   new WOW().init();
-
-  var navMain = $(".navbar-collapse");
-  navMain.on("click", "a", null, function () {
-    navMain.collapse('hide');
-  });
-
-  // var s = skrollr.init();
 
   // Email Validation/Interaction
   function isEmail(email) {
@@ -45,6 +57,7 @@ $(document).ready(function() {
       }
     }
   });
+
   emailBox.on('focus', function () {
     inputGroup.removeClass('invalid');
   })
@@ -54,27 +67,8 @@ $(document).ready(function() {
 
   var roadmapList = $(".roadmap-list");
   var roadmapItemsActive = 0;
-  var roadmapItems = $(".roadmap-list").children();
+  var roadmapItems = roadmapList.children();
   var isVisible = false;
-
-  $.fn.isOnScreen = function(){
-    var win = $(window);
-
-    var viewport = {
-      top : win.scrollTop(),
-      left : win.scrollLeft()
-    };
-    viewport.right = viewport.left + win.width();
-    viewport.bottom = viewport.top + win.height();
-
-    var bounds = this.offset();
-    bounds.right = bounds.left + this.outerWidth();
-    bounds.bottom = bounds.top + this.outerHeight();
-
-    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-
-  };
-
 
   window.onscroll = function() {
     if (roadmapList.isOnScreen()) {

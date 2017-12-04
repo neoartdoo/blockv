@@ -6163,7 +6163,7 @@ button.close {
     width: 132px;
     height: 53px; }
   .footer .design-by {
-    font-size: 22px;
+    font-size: 14px;
     color: #676767; }
     .footer .design-by a {
       color: #676767;
@@ -6287,7 +6287,7 @@ button.close {
   .stats-block .stat-item {
     font-weight: 700;
     color: #fff;
-    font-size: 24px; }
+    font-size: 18px; }
     @media (max-width: 991px) {
       .stats-block .stat-item:not(:last-child) {
         margin-bottom: 20px; } }
@@ -7092,7 +7092,9 @@ button.close {
     position: absolute;
     left: 15px;
     top: 15px;
-    z-index: 4; }
+    z-index: 4;
+    opacity: 0;
+    transition: .3s ease all; }
     .team-section .social-icons a {
       color: #fff;
       text-decoration: none; }
@@ -7156,6 +7158,8 @@ button.close {
       z-index: 3; }
     .team-section .col:hover:after {
       background-color: rgba(101, 106, 161, 0.8); }
+    .team-section .col:hover .social-icons {
+      opacity: 1; }
     @media (max-width: 767px) {
       .team-section .col {
         margin: 0 auto 50px;

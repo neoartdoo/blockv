@@ -102,7 +102,7 @@
   .stat-item {
     font-weight: 700;
     color: $white;
-    font-size: 24px;
+    font-size: 18px;
 
     @include media-breakpoint-down(sm) {
       &:not(:last-child) {

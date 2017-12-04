@@ -52,16 +52,45 @@ $(document).ready(function() {
   $(".slider-apps").slick({"dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000, "arrows":false});
   $(".slider-try-it").slick({"dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000, "arrows":false, "fade": true, "cssEase": "linear"});
 
+  var roadmapList = $(".roadmap-list");
   var roadmapItemsActive = 0;
   var roadmapItems = $(".roadmap-list").children();
+  var isVisible = false;
+
+  $.fn.isOnScreen = function(){
+    var win = $(window);
+
+    var viewport = {
+      top : win.scrollTop(),
+      left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+  };
+
+
+  window.onscroll = function() {
+    if (roadmapList.isOnScreen()) {
+      isVisible = true;
+    }
+  }
 
   setInterval(function() {
-    $(roadmapItems[roadmapItemsActive]).removeClass('active');
-    if(roadmapItemsActive === roadmapItems.length - 2) {
-      roadmapItemsActive = 0;
-    } else {
-      roadmapItemsActive++;
+    if(isVisible) {
+      $(roadmapItems[roadmapItemsActive]).removeClass('active');
+      if(roadmapItemsActive === roadmapItems.length - 2) {
+        roadmapItemsActive = 0;
+      } else {
+        roadmapItemsActive++;
+      }
+      $(roadmapItems[roadmapItemsActive]).addClass('active');
     }
-    $(roadmapItems[roadmapItemsActive]).addClass('active')
   }, 3000);
 });

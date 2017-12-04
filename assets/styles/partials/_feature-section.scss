@@ -36,7 +36,6 @@
 
   .content-wrap {
     @include media-breakpoint-down(xs) {
-      width: 200px;
       margin: 0 auto;
     }
   }
@@ -84,5 +83,45 @@
         margin-bottom: 40px;
       }
     }
+  }
+
+  .app-preview-wrap {
+    position: relative;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(md) {
+      width: 400px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 280px;
+    }
+
+    .slider-wrap {
+      position: absolute;
+
+      @include media-breakpoint-up(md) {
+        width: 269px;
+        top: 73px;
+        left: 72px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 182px;
+        top: 58px;
+        left: 54px;
+      }
+    }
+
+    .slick-dots {
+      @include media-breakpoint-up(md) {
+        bottom: -110px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        bottom: -90px;
+      }
+    }
+
   }
 }

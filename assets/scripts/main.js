@@ -7,6 +7,8 @@ $(document).ready(function() {
     }, 500);
   });
 
+  new WOW().init();
+
   var navMain = $(".navbar-collapse");
   navMain.on("click", "a", null, function () {
     navMain.collapse('hide');
@@ -43,5 +45,6 @@ $(document).ready(function() {
     inputGroup.removeClass('invalid');
   })
 
-
+  $(".slider-apps").slick({"dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000, "arrows":false});
+  $(".slider-try-it").slick({"dots": false, "infinite": true, "autoplay": true, "autoplaySpeed": 2000, "arrows":false, "fade": true, "cssEase": "linear"});
 });

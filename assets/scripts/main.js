@@ -12,5 +12,36 @@ $(document).ready(function() {
     navMain.collapse('hide');
   });
 
-  var s = skrollr.init();
+  // var s = skrollr.init();
+
+  // Email Validation/Interaction
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
+  var inputGroup = $('.subscribe-updates .input-group')
+  var emailBox = $('.subscribe-updates .input-group input')
+
+  $(".subscribe-updates .input-group button").on('click touch', function () {
+    console.log(emailBox.val());
+    if (isEmail(emailBox.val())) {
+      inputGroup.addClass('valid').removeClass('invalid');
+      setTimeout(function() {
+        inputGroup.removeClass('valid');
+        emailBox.val('');
+      }, 3500);
+    } else {
+      if (emailBox.val() == "") {
+        inputGroup.removeClass('invalid');
+      } else {
+        inputGroup.removeClass('valid').addClass('invalid');
+      }
+    }
+  });
+  emailBox.on('focus', function () {
+    inputGroup.removeClass('invalid');
+  })
+
+
 });

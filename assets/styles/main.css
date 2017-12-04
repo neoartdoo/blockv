@@ -6495,6 +6495,32 @@ button.close {
   width: 650px;
   margin: 0 auto;
   max-width: 100%; }
+  .contact-section .contact-form .validation-message {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #00b087;
+    overflow: hidden;
+    transition: all .3s ease;
+    z-index: 2;
+    font-weight: 300;
+    line-height: 73px;
+    font-size: 16px;
+    color: #fff; }
+    .contact-section .contact-form .validation-message span {
+      opacity: 0;
+      transition: opacity .3s ease 1s; }
+  .contact-section .contact-form .input-group {
+    position: relative;
+    z-index: 0; }
+    .contact-section .contact-form .input-group.invalid input {
+      background-color: rgba(205, 0, 0, 0.5); }
+    .contact-section .contact-form .input-group.valid .validation-message {
+      width: 100%; }
+      .contact-section .contact-form .input-group.valid .validation-message span {
+        opacity: 1; }
   .contact-section .contact-form .form-control,
   .contact-section .contact-form .input-group-btn,
   .contact-section .contact-form .input-group-btn .btn {

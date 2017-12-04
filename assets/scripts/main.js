@@ -63,5 +63,5 @@ $(document).ready(function() {
       roadmapItemsActive++;
     }
     $(roadmapItems[roadmapItemsActive]).addClass('active')
-  }, 1000);
+  }, 3000);
 });

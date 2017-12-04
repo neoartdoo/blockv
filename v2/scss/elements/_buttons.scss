@@ -1,0 +1,79 @@
+// scss-lint:disable QualifyingElement
+//
+// Base styles
+//
+.btn {
+  display: inline-block;
+  font-weight: 300;
+  line-height: $btn-line-height;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  user-select: none;
+  border: thin solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-root, $btn-border-radius);
+  @include transition(all .2s ease-in-out);
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+ 
+    }
+  }
+  &.focus {
+    text-decoration: none;
+  }
+  &:active,
+  &.active {
+    background-image: none;
+    outline: 0;
+
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+
+//
+// Alternate buttons
+//
+.btn-primary {
+  @include button-variant($white, $theme-green, $theme-green);
+}
+
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+.btn-dark-gray {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+//
+// Block button
+//
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block+.btn-block {
+  margin-top: $btn-block-spacing-y;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}

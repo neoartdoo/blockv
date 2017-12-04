@@ -1,0 +1,24 @@
+.thanks-sect {
+  color: $theme-color;
+  padding: 70px 0;
+  h1 {
+    margin-top: 5%;
+    line-height: 50px;
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 15%;
+    }
+  }
+  h3, h4 {
+    margin: 0;
+  }
+  img {
+    width: 70px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 544px) {
+    .col-sm-6 {
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.fmtb-sect {
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #eff0f9;
+  color: $theme-color;
+
+  .row {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .captions {
+    text-align: right;
+    padding-right: 15%;
+    p {
+      font-size: 19px;
+      font-weight: 300;
+    }
+  }
+  .particle-ball {
+    position: absolute;
+    height: 140%;
+    width: auto;
+    left: -20%;
+    top: -5%;
+  }
+  @media(max-width: 769px) {
+    padding: 70px 0;
+    height: auto;
+    .row {
+      height: auto;
+      .captions {
+        text-align: left;
+        padding-right: 0;
+      }
+    }
+    .particle-ball {
+      height: 100%;
+      width: auto;
+      left: -50%;
+      top: 0
+    }
+  }
+}
+
+.icon-group {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+  a {
+    color: #6ea1d2;
+    text-transform: uppercase;
+  }
+  > span {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    svg {
+      width: 60%;
+      margin-top: 15px;
+      height: auto;
+    }
+  }
+  .icon-group-content {
+    width: 75%;
+    float: left;
+  }
+  p {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 300;
+    &.sub-title {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+  }
+  &:nth-child(2) {
+    span {
+      svg {
+        width: 46%;
+      }
+    }
+  }
+
+}

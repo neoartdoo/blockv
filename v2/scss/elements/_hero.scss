@@ -1,0 +1,96 @@
+.hero-sect {
+  //height: 100vh;
+  position: relative;
+  background:$dark-background;
+  padding-top: 10%;
+  padding-bottom: 6%;
+  .hero-title {
+    color: $white;
+    padding-right: 30px;
+  }
+  p {
+    color:$white;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .btn-primary {
+    margin-right: 15px;
+  }
+  .countdown-wrapper {
+    display: inline-block;
+    float: right;
+    opacity: 0;
+    p {
+      font-family: AppleGothic;
+      color: $light-blue;
+      letter-spacing: 2px;
+      text-align: center;
+      small {
+        padding: 0 5%;
+      }
+    }
+    visibility: visible;
+    transition: all .3s;
+    transition: all .3s;
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+    span {
+      display: none;
+    }
+    &.show {
+      opacity: 1
+    }
+  }
+  @media (max-width:768px) {
+    padding: 15% 0;
+    height: auto;
+    .hero-title {
+      transform: translateY(0);
+      margin-bottom: 30px;
+    }
+    .countdown-sect {
+      text-align: center;
+      min-height: 260px;
+    }
+    .countdown-wrapper {
+      margin-top: 30px;
+      transform: translateY(0);
+      float: none;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: 30% 0;
+  }
+  @media (max-width:991px) {
+    .hero-title {
+      br {
+        display: none;
+      }
+    }
+    .btn-primary,
+    .btn-secondary {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+  }
+  // &.sticky {
+
+
+
+  // }
+  @media (max-width:768px) {
+    .container {
+      padding-top: 0;
+    }
+  }
+}
+@media (max-width:991px) {
+  .sub-title {
+    br {
+      display: none;
+    }
+  }
+}

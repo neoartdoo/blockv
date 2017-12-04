@@ -1,0 +1,113 @@
+$enable-grid-classes: true !default;
+$enable-flex: true !default;
+$enable-rounded: false !default;
+$enable-transitions: true !default;
+
+//Main Colors
+$white: #ffffff !default;
+$light-blue: #C6F0FF !default;
+$blue: #113f6c !default;
+$dark-blue: #0F2749 !default;
+$light-blue-darker: #A7C4FE;
+$gray: #617181 !default;
+$dark-gray: #717171 !default;
+$dark-background: linear-gradient(to bottom, #484c7c 0%,#8387b7 100%) !default;
+$theme-color: #656aa1 !default;
+$theme-green: #00e3ae !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-familly-body: "Helvetica Neue", Arial, sans-serif;
+$font-size-root: 15px !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+@mixin _assert-ascending($map, $map-name) {
+  $prev-key: null;
+  $prev-num: null;
+  @each $key,
+  $num in $map {
+    @if $prev-num==null {
+      // Do nothing
+    }
+    @else if not comparable($prev-num, $num) {
+      @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+    }
+    @else if $prev-num>=$num {
+      @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
+    }
+    $prev-key: $key;
+    $prev-num: $num;
+  }
+}
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 769px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1142px
+) !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:      12 !default;
+$grid-gutter-width: 30px !default;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+$btn-padding-x : 2rem !default;
+$btn-padding-y : .7rem !default;
+$btn-line-height : 1.25 !default;
+
+$btn-primary-color : $light-blue !default;
+$btn-primary-bg : $blue !default;
+$btn-primary-border : rgba(256,256,256, .2) !default;
+
+$btn-secondary-color: $light-blue !default;
+$btn-secondary-bg: $dark-gray !default;
+$btn-secondary-border: $dark-gray !default;
+
+$btn-secondary-color: $light-blue !default;
+$btn-secondary-bg: $gray !default;
+$btn-secondary-border: $gray !default;
+
+$btn-padding-x-sm : .5rem !default;
+$btn-padding-y-sm : .25rem !default;
+$btn-padding-x-lg : 1.5rem !default;
+$btn-padding-y-lg : .75rem !default;
+$btn-block-spacing-y : .5rem !default;
+$btn-toolbar-margin : .5rem !default;
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius : 0 !default;
+$btn-border-radius-lg : 0 !default;
+$btn-border-radius-sm : 0 !default;

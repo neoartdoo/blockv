@@ -1,0 +1,45 @@
+.join-sect {
+  background: $dark-background;
+  padding: 70px 0;
+  h1, h2 {
+    margin-bottom: 50px;
+    font-weight: 200;
+    color: white;
+  }
+  .hero-title {
+    text-transform: none;
+  }
+  .row  {
+    justify-content: center;
+    .social-icons {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        line-height: 40px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        svg {
+          width: 25px;
+          fill: $theme-color;
+          height: 25px;
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white;
+    margin-top: 50px;
+  }
+}

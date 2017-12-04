@@ -1,0 +1,12 @@
+{
+  "root": "./",
+  "encoding": "UTF-8",
+  "logging": {
+    "access": false,
+    "error": "warn"
+  },
+  "https_only": true,
+  "routes": {
+    "/static.json": "index.html"
+  }
+}

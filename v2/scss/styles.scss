@@ -1,0 +1,83 @@
+// Base
+@import "base/var";
+@import "base/mix";
+@import "base/global";
+@import "base/fonts";
+// Layout
+@import "grid/grid";
+// Elements
+@import "elements/header";
+@import "elements/hero";
+@import "elements/buttons";
+@import "elements/countdown";
+@import "elements/forms";
+@import "elements/circles";
+@import "elements/footer";
+@import "elements/videos";
+@import "elements/base";
+@import "elements/card";
+@import "elements/key-dates";
+@import "elements/team";
+@import "elements/faq";
+@import "elements/techstack";
+@import "elements/vatoms-sect";
+@import "elements/dev-sect";
+@import "elements/modal";
+@import "elements/select/core";
+
+@import "elements/thanks-sect";
+@import "elements/tryit-sect";
+@import "elements/join-sect";
+@import "elements/fmtb-sect";
+@import "slick/slick-theme";
+@import "slick/slick";
+
+p {
+  font-family: 'Helvetica Neue';
+}
+
+@media (max-width: 768px) {
+  .tech-stack-768-left {
+    left: 120% !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .font-weight-300 {
+    font-weight: 300 !important;
+  }
+  .font-size {
+    font-size: 1.5em;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+  .tech-stack-font-size {
+    padding-left: 5px;
+    font-size: 1em !important;
+    font-weight: 300 !important;
+    color: #111 !important;
+  }
+  .tech-stack-nucleus {
+    width: 72vw !important;
+    left: 105%;
+  }
+  .tech-stack-icon-group  {
+    padding: 0 !important;
+  }
+  .tech-stack-menu-header {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .tech-stack-menu-header {
+    font-size: 12px !important;
+  }
+  .tech-stack-icon-group  {
+    padding: 0 !important;
+  }
+}
+
+//AOS
+// @import "aos/aos";

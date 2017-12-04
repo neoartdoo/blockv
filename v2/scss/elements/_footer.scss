@@ -1,0 +1,56 @@
+.footer {
+  background-color: $dark-blue;
+  padding: 50px 0;
+  display: inline-block;
+  width: 100%;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    a {
+      padding: 3px 10px;
+      &:hover {
+        svg {
+          fill: darken($light-blue, 20%);
+        }
+      }
+    }
+    svg {
+      width: 21px;
+      height: 21px;
+      fill: $white;
+    }
+    @media (max-width:540px) {
+      display: inline-block;
+      margin-top: 30px;
+      margin-left: -4;
+    }
+  }
+  .footer-links {
+    float: right;
+    margin-top: -100px;
+    li {
+      a {
+        line-height: 45px;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 2px;
+      }
+    }
+    @media (max-width:700px) {
+      float: none;
+      margin-top: 40px;
+    }
+  }
+  .all-rights {
+    margin-top: 25px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: 200;
+    float: left;
+    @media (max-width:700px) {
+      margin-top: 40px;
+    }
+  }
+}

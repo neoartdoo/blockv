@@ -161,9 +161,22 @@ $ (document).ready (function () {
     });
   }
 
+  function checkPos (number) {
+    if(number > 100) {
+      return 100;
+    } else {
+      return number;
+    }
+  }
+
   window.ondevicemotion = function(event) {
     var title = $('.gradient-title');
-    title.css('background-image',
-      'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #d0ac71 ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #58421d 100%')
+    var posX = checkPos(parseFloat(50 - 4 * event.accelerationIncludingGravity.x).toFixed());
+    var posY = checkPos(parseFloat(65 - 2 * event.accelerationIncludingGravity.y).toFixed());
+
+    // title.css('background-image',
+    //   'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #d0ac71' +
+    //   ' ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #58421d 100%');
+    title.css('background-image', 'radial-gradient(closest-corner at '+ posX + '% ' + posY + '%, #d0ac71, #d0ac71, #58421d, #58421d)');
   }
 });

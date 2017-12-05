@@ -22,6 +22,22 @@
       justify-content: space-around;
     }
 
+    &.active-2,
+    &.active-3 {
+      .list-item {
+        &:after {
+          -moz-transform: scaleX(-1);    /* Gecko */
+          -o-transform: scaleX(-1);      /* Opera */
+          -webkit-transform: scaleX(-1); /* Webkit */
+          transform: scaleX(-1);         /* Standard */
+          filter: FlipH;                 /* IE 6/7/8 */
+
+          right: auto;
+          left: -20px;
+        }
+      }
+    }
+
     .list-item {
       width: 250px;
       position: relative;
@@ -32,7 +48,7 @@
 
       &:after {
         opacity: 0;
-        transition: opacity .3s ease;
+        transition: all .3s ease;
         @include decoration;
         content: '';
         background: url("../img/triagle-center-gold.svg") no-repeat right top;

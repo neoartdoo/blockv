@@ -89,12 +89,14 @@ $(document).ready(function() {
   setInterval(function() {
     if(isVisible) {
       $(roadmapItems[roadmapItemsActive]).removeClass('active');
+      roadmapList.removeClass('active-' + roadmapItemsActive);
       if(roadmapItemsActive === roadmapItems.length - 1) {
         roadmapItemsActive = 0;
       } else {
         roadmapItemsActive++;
       }
       $(roadmapItems[roadmapItemsActive]).addClass('active');
+      roadmapList.addClass('active-' + roadmapItemsActive);
     }
   }, 3000);
 });

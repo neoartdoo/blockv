@@ -6156,6 +6156,14 @@ button.close {
     .header .navbar .link a:focus {
       outline: 5px auto -webkit-focus-ring-color;
       outline-offset: -2px; }
+  .header .navbar .link.social-links {
+    display: block; }
+    .header .navbar .link.social-links a {
+      display: inline-block;
+      margin-right: 0; }
+    .header .navbar .link.social-links svg {
+      width: 20px;
+      height: 20px; }
 
 .footer {
   padding: 70px 0; }

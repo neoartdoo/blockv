@@ -14,8 +14,15 @@ $ (document).ready (function () {
     bounds.bottom = bounds.top + this.outerHeight ();
 
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-
   };
+
+  function checkPos (number) {
+    if(number > 100) {
+      return 100;
+    } else {
+      return number;
+    }
+  }
 
   var heroVideo = $ ('#hero-video');
 
@@ -140,6 +147,17 @@ $ (document).ready (function () {
       roadmapItems.removeClass('active');
       $(this).addClass('active');
     })
+
+    window.ondevicemotion = function(event) {
+      var title = $('.gradient-title');
+      var posX = checkPos(parseFloat(50 - 4 * event.accelerationIncludingGravity.x).toFixed());
+      var posY = checkPos(parseFloat(65 - 2 * event.accelerationIncludingGravity.y).toFixed());
+
+      // title.css('background-image',
+      //   'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #d0ac71' +
+      //   ' ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #58421d 100%');
+      title.css('background-image', 'radial-gradient(closest-corner at '+ posX + '% ' + posY + '%, #d0ac71, #d0ac71, #58421d, #58421d)');
+    }
   } else {
     setInterval (function () {
       if (isVisible) {
@@ -159,24 +177,5 @@ $ (document).ready (function () {
       roadmapItems.removeClass('active');
       $(this).addClass('active');
     });
-  }
-
-  function checkPos (number) {
-    if(number > 100) {
-      return 100;
-    } else {
-      return number;
-    }
-  }
-
-  window.ondevicemotion = function(event) {
-    var title = $('.gradient-title');
-    var posX = checkPos(parseFloat(50 - 4 * event.accelerationIncludingGravity.x).toFixed());
-    var posY = checkPos(parseFloat(65 - 2 * event.accelerationIncludingGravity.y).toFixed());
-
-    // title.css('background-image',
-    //   'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #d0ac71' +
-    //   ' ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #58421d 100%');
-    title.css('background-image', 'radial-gradient(closest-corner at '+ posX + '% ' + posY + '%, #d0ac71, #d0ac71, #58421d, #58421d)');
   }
 });

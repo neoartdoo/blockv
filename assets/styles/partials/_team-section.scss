@@ -143,6 +143,10 @@
         margin-right: 20px;
         margin-left: 20px;
       }
+
+      @media (max-width: 450px) {
+        margin-bottom: 80px;
+      }
     }
   }
 
@@ -190,7 +194,13 @@
       }
     }
 
-    @include media-breakpoint-down(xs) {
+    @media (min-width: 371px) and (max-width: 767px) {
+      margin: 0 auto 50px;
+      width: 300px;
+      max-width: 30%;
+    }
+
+    @media (max-width: 370px) {
       margin: 0 auto 50px;
       width: 300px;
       max-width: 45%;
@@ -211,6 +221,11 @@
       color: $white;
       z-index: 4;
       letter-spacing: 2px;
+
+      @media (max-width: 450px) {
+        font-size: 14px;
+        top: 115%;
+      }
 
       span {
         font-weight: 600;

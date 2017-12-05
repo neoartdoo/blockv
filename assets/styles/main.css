@@ -7271,6 +7271,9 @@ button.close {
     width: 200px;
     margin-right: 20px;
     margin-left: 20px; } }
+    @media (max-width: 450px) {
+      .team-section .team-advisors .col {
+        margin-bottom: 80px; } }
   .team-section .col {
     position: relative;
     z-index: 0; }
@@ -7303,7 +7306,12 @@ button.close {
       background-color: rgba(101, 106, 161, 0.8); }
     .team-section .col:hover .social-icons {
       opacity: 1; }
-    @media (max-width: 767px) {
+    @media (min-width: 371px) and (max-width: 767px) {
+      .team-section .col {
+        margin: 0 auto 50px;
+        width: 300px;
+        max-width: 30%; } }
+    @media (max-width: 370px) {
       .team-section .col {
         margin: 0 auto 50px;
         width: 300px;
@@ -7321,6 +7329,10 @@ button.close {
       color: #fff;
       z-index: 4;
       letter-spacing: 2px; }
+      @media (max-width: 450px) {
+        .team-section .col .member-name {
+          font-size: 14px;
+          top: 115%; } }
       .team-section .col .member-name span {
         font-weight: 600; }
     .team-section .col .team-member-photo {

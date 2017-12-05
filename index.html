@@ -10,7 +10,7 @@
 
 <body>
 
-<section class="hero-section">
+<section class="hero-section scrollme" id="scrollme">
     <!-- HEADER -->
     <header class="header wow fadeIn" data-wow-delay="3s">
         <nav class="navbar navbar-default">
@@ -45,7 +45,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="link featured"><a href="assets/whitepaper.pdf" target="_blank">Read Whitepaper</a></li>
+                        <li class="link featured"><a href="assets/whitepaper.pdf" target="_blank">Read Whitepaper</a>
+                        </li>
                         <li class="link"><a href="#team">Team</a></li>
                         <li class="link"><a href="https://medium.com/@blockv_io" target="_blank">Blog</a></li>
                         <li class="link social-links">
@@ -84,8 +85,11 @@
                     <div class="col-md-6">
                         <h1 class="page-title wow fadeInLeft" data-wow-delay="1s">
                             WELCOME TO <br>
-                            THE <span class="featured gradient-title">EXPERIENTIAL <span class="decoration wow fadeInUp"
-                                                                          data-wow-delay="1s"></span></span> <br>
+                            THE <span class="featured gradient-title animateme" data-when="view" data-from="0.65"
+                                      data-to="0.15" data-translatex="400" data-translatey="400"
+                        >EXPERIENTIAL <span class="decoration wow fadeInUp"
+                                                                                         data-wow-delay="1s"></span></span>
+                            <br>
                             ECONOMY.
                         </h1>
 
@@ -108,8 +112,8 @@
                                     <div class="play"></div>
                                     <div class="mute-icon">
                                         <svg>
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                             xlink:href="assets/fonts/icons.svg#icon-mute"></use>
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="assets/fonts/icons.svg#icon-mute"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -177,25 +181,32 @@
                         <div class="slider-wrap">
                             <div class="slider slider-apps">
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-1.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-1.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-2.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-2.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-3.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-3.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-4.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-4.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-5.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-5.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-6.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-6.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                                 <div>
-                                    <img src="assets/img/carouselapps/app-slider-7.jpg" class="img-responsive" alt="carousel-image">
+                                    <img src="assets/img/carouselapps/app-slider-7.jpg" class="img-responsive"
+                                         alt="carousel-image">
                                 </div>
                             </div>
                         </div>
@@ -991,7 +1002,9 @@
                         <li>Initial set of APIs</li>
                         <li>Publisher payments</li>
                         <li>Multiple customer support channels including chat, knowledge base, FAQ</li>
-                        <li>Launch of vACore, VAChain (blockchain administrators and hybrid integration engine), vAIMS (vAtom Identity Management System)</li>
+                        <li>Launch of vACore, VAChain (blockchain administrators and hybrid integration engine), vAIMS
+                            (vAtom Identity Management System)
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1008,7 +1021,9 @@
                         <li>Public launch including all elements of the Beta</li>
                         <li>Launch of SDKs, code samples, extended APIs</li>
                         <li>Launch of initial developer analytics</li>
-                        <li>Launch of additional features, potentially to include:, iOS/Android/HTML bridge SDKs, API marketing</li>
+                        <li>Launch of additional features, potentially to include: iOS/Android/HTML bridge SDKs, API
+                            marketing
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1472,6 +1487,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 <script src="assets/scripts/slick.js"></script>
 <script src="assets/scripts/wow.min.js"></script>
+<script src="assets/scripts/jquery.scrollme.min.js"></script>
 <script src="assets/scripts/main.js"></script>
 
 </body>

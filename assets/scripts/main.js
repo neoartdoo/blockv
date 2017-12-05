@@ -48,14 +48,21 @@ $ (document).ready (function () {
     return regex.test (email);
   }
 
+  var contactForm = $ ('.subscribe-updates');
+  var contactFormSubmitButton = $ (".subscribe-updates .input-group button");
   var inputGroup = $ ('.subscribe-updates .input-group')
   var emailBox = $ ('.subscribe-updates .input-group input')
+
+  contactForm.submit(function( event ) {
+    event.preventDefault();
+    contactFormSubmitButton.click();
+  });
 
   var apiUrl = "https://blockv.api-us1.com";
   var apiString = apiUrl + "/admin/api.php";
   var apiKey = "f2ec2ed8677320cf24e162d440927b5f993c7489e2acc5f999f385f816b8fdcd724caf87";
 
-  $ (".subscribe-updates .input-group button").on ('click touch', function () {
+  contactFormSubmitButton.on ('click touch', function () {
     if (isEmail (emailBox.val())) {
       var userId = Date.now();
       var userIdProp = "p[" + userId + "]";

@@ -8,6 +8,9 @@ body {
   margin: 0;
   backface-visibility: hidden;
   perspective: unset;
+  background: #ccc url(../img/graphy_@2X.png) center top repeat;
+  background-size: 80px;
+  background-attachment: fixed;
 }
 
 @import "settings";

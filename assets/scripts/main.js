@@ -150,11 +150,10 @@ $ (document).ready (function () {
 
     window.ondevicemotion = function(event) {
       var title = $('.gradient-title');
-      var posX1 = checkPos(parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed());
-      var posX2 = checkPos(parseFloat(40 + 4 * event.accelerationIncludingGravity.y).toFixed());
+      var posX1 = parseFloat(60 + 7 * event.accelerationIncludingGravity.x).toFixed();
+      var posX2 = parseFloat(40 + 7 * event.accelerationIncludingGravity.x).toFixed();
 
-      title.css('background-image',
-        'linear-gradient(to left, #58421d 0%, #d0ac71 ' + posX1 +'%, #d0ac71' + ' ' + posX2 +'%, #58421d 100%');
+      title.css('background-image','linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #d0ac71 ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #58421d 100%')
 
     }
   } else {

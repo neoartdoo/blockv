@@ -7,7 +7,10 @@ body {
   width: 100%;
   margin: 0;
   backface-visibility: hidden;
-  perspective: unset; }
+  perspective: unset;
+  background: #ccc url(../img/graphy_@2X.png) center top repeat;
+  background-size: 80px;
+  background-attachment: fixed; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -6358,7 +6361,7 @@ button.close {
 
 .stats-block {
   position: relative;
-  background-color: #ff4c77;
+  background-color: #00b0ff;
   margin-bottom: 17px;
   padding: 25px 0; }
   @media (min-width: 992px) {
@@ -6383,7 +6386,7 @@ button.close {
     right: 0;
     height: 17px;
     top: 100%;
-    background-color: #962626; }
+    background-color: #006a99; }
 
 @media (min-width: 1200px) {
   .feature-section {
@@ -6641,7 +6644,7 @@ button.close {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    animation: pulse-ring 1.5s ease-in-out infinite; }
+    animation: pulse-ring 2s ease-in-out infinite; }
     @media (max-width: 767px) {
       .feature-section .present-image-wrap img {
         width: 200px; } }
@@ -6650,7 +6653,7 @@ button.close {
   0% {
     transform: translateX(-50%) scale(1); }
   50% {
-    transform: translateX(-50%) scale(1.1); }
+    transform: translateX(-50%) scale(1.05); }
   100% {
     transform: translateX(-50%) scale(1); } }
 

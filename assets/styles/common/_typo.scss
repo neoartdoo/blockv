@@ -35,16 +35,12 @@
 }
 
 .page-subtitle {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 50px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
   letter-spacing: 4px;
   color: $gray;
   margin-bottom: 30px;
-
-  @include media-breakpoint-down(sm) {
-    line-height: 30px;
-  }
 }
 
 .section-title {
@@ -74,8 +70,8 @@
   }
 
   @include media-breakpoint-only(sm) {
-    font-size: 40px;
-    line-height: 38px;
+    font-size: 42px;
+    line-height: 39px;
   }
 
   @include media-breakpoint-down(sm) {
@@ -85,7 +81,19 @@
   }
 
   @include media-breakpoint-down(xs) {
-    font-size: 32px;
-    line-height: 31px;
+    font-size: 40px;
+    line-height: 37px;
+  }
+}
+
+.page-title,
+.section-title {
+  .featured {
+    &.gradient-title {
+      background: linear-gradient($gold 0%, darken($gold, 40%) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: background-image .3s linear;
+    }
   }
 }

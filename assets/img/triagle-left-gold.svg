@@ -1,16 +1,16 @@
 <svg width="468px" height="213px" viewBox="0 0 468 213" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <linearGradient x1="76.9978883%" y1="7.02828859%" x2="35.9550216%" y2="84.0974603%" id="linearGradient-1">
-            <stop stop-color="#FAD961" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#F76B1C" offset="100%"></stop>
+        <linearGradient x1="76.9978883%" y1="7.02828859%" x2="35.9550216%" y2="84.0974603%" id="b">
+            <stop stop-color="#FAD961" stop-opacity="0" offset="0%"/>
+            <stop stop-color="#F76B1C" offset="100%"/>
         </linearGradient>
-        <polygon id="path-2" points="648.169094 2178 800 2178 332 2391 378.893598 2359.16469"></polygon>
+        <polygon id="a" points="648.169 2178 800 2178 332 2391 378.894 2359.165"/>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.527117301">
-        <g id="Desktop-HD-Copy-6" transform="translate(-332.000000, -2178.000000)">
-            <g id="Rectangle-Copy-10">
-                <use fill="#E8C996" xlink:href="#path-2"></use>
-                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.527117301">
+        <g transform="translate(-332.000000, -2178.000000)">
+            <g>
+                <use fill="#E8C996" xlink:href="#a"/>
+                <use fill="url(#b)" xlink:href="#a"/>
             </g>
         </g>
     </g>

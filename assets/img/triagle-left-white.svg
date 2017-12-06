@@ -1,7 +1,7 @@
 <svg width="857px" height="817px" viewBox="0 0 857 817" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.123188406">
-        <g id="Desktop-HD-Copy-6" transform="translate(-325.000000, -6712.000000)" fill="#E8C996">
-            <polygon id="Rectangle-Copy-25" points="903.967764 6712 1182 6712 325 7529"></polygon>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.123188406">
+        <g transform="translate(-325.000000, -6712.000000)" fill="#E8C996">
+            <polygon points="903.968 6712 1182 6712 325 7529"/>
         </g>
     </g>
 </svg>

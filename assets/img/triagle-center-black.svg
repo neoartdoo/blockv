@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="935px" height="235px" viewBox="0 0 935 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle Copy 12</title>
-    <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="75.4310601%" y1="11.8703877%" x2="41.9512023%" y2="43.7993385%" id="linearGradient-1">
-            <stop stop-color="#FFFFFF" stop-opacity="0.805112092" offset="0%"></stop>
-            <stop stop-color="#252525" stop-opacity="0.5" offset="100%"></stop>
-            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        <linearGradient x1="75.4310601%" y1="11.8703877%" x2="41.9512023%" y2="43.7993385%" id="b">
+            <stop stop-color="#FFFFFF" stop-opacity="0.805112092" offset="0%"/>
+            <stop stop-color="#252525" stop-opacity="0.5" offset="100%"/>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"/>
         </linearGradient>
-        <polygon id="path-2" points="650.324826 0 953.5 0 19 235"></polygon>
+        <polygon id="a" points="650.325 0 953.5 0 19 235"/>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.460088315">
-        <g id="Desktop-HD-Copy-6" transform="translate(-366.000000, -5616.000000)">
-            <g id="Group-3" transform="translate(347.000000, 5616.000000)">
-                <g id="Rectangle-Copy-12" transform="translate(486.250000, 117.500000) scale(-1, 1) translate(-486.250000, -117.500000) ">
-                    <use fill="#000000" xlink:href="#path-2"></use>
-                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.460088315">
+        <g transform="translate(-366.000000, -5616.000000)">
+            <g transform="translate(347.000000, 5616.000000)">
+                <g transform="translate(486.250000, 117.500000) scale(-1, 1) translate(-486.250000, -117.500000)">
+                    <use fill="#000000" xlink:href="#a"/>
+                    <use fill="url(#b)" xlink:href="#a"/>
                 </g>
             </g>
         </g>

@@ -206,6 +206,7 @@ $ (document).ready (function () {
   
   // Gift button
   var giftButton = $('#gift-button');
+  var giftButtonText = $('#gift-button .text');
   var giftStep = 0;
   var giftStepsList = $('.steps-list li');
   var giftProgressbarWrap = $('.gift-progress');
@@ -217,7 +218,7 @@ $ (document).ready (function () {
     switch(giftStep) {
       case 0:
         $('.present-image-wrap').removeClass('animated');
-        giftButton.text('Next Step');
+        giftButtonText.text('Next Step');
         giftStepsList.removeClass('active');
         giftStepsList.eq( giftStep ).addClass('active');
         tryItSlider.slick('slickGoTo', giftStep + 1);
@@ -225,14 +226,14 @@ $ (document).ready (function () {
         giftProgressbarWrap.css('opacity', 1);
         break;
       case 5:
-        giftButton.text('Start again');
+        giftButtonText.text('Start again');
         giftStepsList.removeClass('active');
         giftStepsList.eq( giftStep ).addClass('active');
         tryItSlider.slick('slickGoTo', giftStep + 1);
         giftProgressbar.css('width', '100%');
         break;
       case 6:
-        giftButton.text('Next Step');
+        giftButtonText.text('Next Step');
         giftStepsList.removeClass('active');
         giftStepsList.eq(0).addClass('active');
         giftProgressbar.css('width', '0');

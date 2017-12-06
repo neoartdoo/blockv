@@ -117,10 +117,13 @@ $ (document).ready (function () {
     "autoplaySpeed": 2000,
     "arrows": false
   });
-  $ (".slider-try-it").slick ({
+
+  var tryItSlider = $ (".slider-try-it");
+
+  tryItSlider.slick ({
     "dots": false,
     "infinite": true,
-    "autoplay": true,
+    "false": true,
     "autoplaySpeed": 2000,
     "arrows": false,
     "fade": true,
@@ -202,5 +205,40 @@ $ (document).ready (function () {
       roadmapItems.removeClass ('active');
       $ (this).addClass ('active');
     });
+  }
+  
+  // Gift button
+
+  var giftButton = $('#gift-button');
+  var giftStep = 0;
+  var giftStepsList = $('.steps-list li');
+  var giftProgressbar = $('.gift-progress .progress-bar');
+
+  giftButton.click(giftButtonEvent);
+
+  function giftButtonEvent () {
+    switch(giftStep) {
+      case 0:
+        $('.present-image-wrap').removeClass('animated');
+        giftButton.text('Next Step');
+        giftStepsList.eq( giftStep ).addClass('done');
+        tryItSlider.slick('slickGoTo', giftStep + 1);
+        giftProgressbar.css('width', '18%');
+        break;
+      case 5:
+        giftButton.text('Well done!!!');
+        giftStepsList.eq( giftStep ).addClass('done');
+        giftButton.attr('disabled', true);
+        tryItSlider.slick('slickGoTo', giftStep + 1);
+        giftProgressbar.css('width', '100%');
+        break;
+      default:
+        giftStepsList.eq( giftStep ).addClass('done');
+        if( giftStep < 6) {
+          tryItSlider.slick('slickGoTo', giftStep + 1);
+          giftProgressbar.css('width', 100 / 6 * (giftStep + 1) + '%');
+        }
+    }
+    giftStep++;
   }
 });

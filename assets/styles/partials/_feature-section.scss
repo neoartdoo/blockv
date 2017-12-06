@@ -294,6 +294,12 @@
       height: 200px;
     }
 
+    &.animated {
+      img {
+        animation: pulse-ring 2s ease-in-out infinite;
+      }
+    }
+
     img {
       position: absolute;
       z-index: 2;
@@ -301,11 +307,35 @@
       left: 50%;
       top: 0;
       transform: translateX(-50%);
-      animation: pulse-ring 2s ease-in-out infinite;
+      transition: all 2s ease-in-out;
 
       @include media-breakpoint-down(xs) {
         width: 200px;
       }
+    }
+  }
+
+  .gift-button-wrap {
+    margin-bottom: 20px;
+
+    .btn {
+      width: 250px;
+    }
+  }
+
+  .steps-list {
+    .done {
+      font-weight: 500;
+    }
+  }
+
+  .gift-progress {
+    width: 250px;
+    margin-bottom: 30px;
+
+    .progress-bar {
+      background-color: $blue;
+      height: 40px;
     }
   }
 }

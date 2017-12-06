@@ -88,7 +88,9 @@
         .content {
           opacity: 1;
         }
+      }
 
+      &.styled {
         &:after {
           opacity: 1;
         }
@@ -96,15 +98,14 @@
 
       .block {
         width: 250px;
-        height: 250px;
         background-color: transparentize(#002E4F, .76);
         padding: 1px 20px 0;
         transition: background-color .3s ease;
+        height: auto;
+        padding-bottom: 5px;
 
         @include media-breakpoint-down(xs) {
-          height: auto;
           width: 100%;
-          padding-bottom: 5px;
         }
       }
 
@@ -132,10 +133,6 @@
         font-weight: 400;
         color: $black;
         margin-bottom: 25px;
-
-        @include media-breakpoint-up(sm) {
-          opacity: 0;
-        }
 
         .info {
           margin-bottom: 20px;

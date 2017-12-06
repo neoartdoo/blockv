@@ -130,10 +130,10 @@ $ (document).ready (function () {
     "cssEase": "linear"
   });
 
-  var roadmapList = $ (".roadmap-list");
-  var roadmapItemsActive = 0;
-  var roadmapItems = roadmapList.children ();
-  var roadmapIsVisible = false;
+  // var roadmapList = $ (".roadmap-list");
+  // var roadmapItemsActive = 0;
+  // var roadmapItems = roadmapList.children ();
+  // var roadmapIsVisible = false;
 
   var emailForm = $('.email-form-field');
   var emailFormIsVisible = false;
@@ -158,9 +158,9 @@ $ (document).ready (function () {
   }
 
   window.onscroll = function () {
-    if (roadmapList.isOnScreen ()) {
-      roadmapIsVisible = true;
-    }
+    // if (roadmapList.isOnScreen ()) {
+    //   roadmapIsVisible = true;
+    // }
 
     if (!emailFormEnabled) {
       emailFormEnabled = true;
@@ -170,42 +170,41 @@ $ (document).ready (function () {
     }
   }
 
-  function clearActiveRoadmapStep (number) {
-    roadmapList.removeClass ('active-' + roadmapItemsActive);
-  }
+  // function clearActiveRoadmapStep (number) {
+  //   roadmapList.removeClass ('active-' + roadmapItemsActive);
+  // }
 
   if (window.matchMedia ('(max-width: 767px)').matches) {
-    roadmapItems.click (function () {
-      roadmapItems.removeClass ('active');
-      $ (this).addClass ('active');
-    })
+    // roadmapItems.click (function () {
+    //   roadmapItems.removeClass ('active');
+    //   $ (this).addClass ('active');
+    // })
 
     window.ondevicemotion = function (event) {
       var title = $ ('.gradient-title');
       title.css ('background-image', 'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat (40 + 4 * event.accelerationIncludingGravity.x).toFixed (2)) + '%, #d0ac71 ' + (parseFloat (60 + 4 * event.accelerationIncludingGravity.x).toFixed (2)) + '%, #58421d 100%')
     }
   } else {
-    setInterval (function () {
-      if (roadmapIsVisible) {
-        roadmapItems.removeClass ('active');
-        clearActiveRoadmapStep (roadmapItemsActive);
-        if (roadmapItemsActive === roadmapItems.length - 1) {
-          roadmapItemsActive = 0;
-        } else {
-          roadmapItemsActive++;
-        }
-        $ (roadmapItems[roadmapItemsActive]).addClass ('active');
-      }
-    }, 5000);
+    // setInterval (function () {
+    //   if (roadmapIsVisible) {
+    //     roadmapItems.removeClass ('active');
+    //     clearActiveRoadmapStep (roadmapItemsActive);
+    //     if (roadmapItemsActive === roadmapItems.length - 1) {
+    //       roadmapItemsActive = 0;
+    //     } else {
+    //       roadmapItemsActive++;
+    //     }
+    //     $ (roadmapItems[roadmapItemsActive]).addClass ('active');
+    //   }
+    // }, 5000);
 
-    roadmapItems.hover (function () {
-      roadmapItems.removeClass ('active');
-      $ (this).addClass ('active');
-    });
+    // roadmapItems.hover (function () {
+    //   roadmapItems.removeClass ('active');
+    //   $ (this).addClass ('active');
+    // });
   }
   
   // Gift button
-
   var giftButton = $('#gift-button');
   var giftStep = 0;
   var giftStepsList = $('.steps-list li');

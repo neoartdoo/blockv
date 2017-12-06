@@ -5,6 +5,10 @@
     width: 100%;
     position: relative;
 
+    >* {
+      min-width: 0;
+    }
+
     @include media-breakpoint-up(lg) {
       justify-content: space-between;
     }
@@ -39,7 +43,8 @@
     }
 
     .list-item {
-      width: 250px;
+      min-width: 250px;
+      flex: 0 0 250px;
       position: relative;
 
       @include media-breakpoint-down(xs) {

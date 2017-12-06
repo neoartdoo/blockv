@@ -17,7 +17,7 @@ $ (document).ready (function () {
   };
 
   function checkPos (number) {
-    if(number > 100) {
+    if (number > 100) {
       return 100;
     } else {
       return number;
@@ -60,9 +60,9 @@ $ (document).ready (function () {
   var inputGroup = $ ('.subscribe-updates .input-group')
   var emailBox = $ ('.subscribe-updates .input-group input')
 
-  contactForm.submit(function( event ) {
-    event.preventDefault();
-    contactFormSubmitButton.click();
+  contactForm.submit (function (event) {
+    event.preventDefault ();
+    contactFormSubmitButton.click ();
   });
 
   var apiUrl = "https://blockv.api-us1.com";
@@ -70,35 +70,35 @@ $ (document).ready (function () {
   var apiKey = "f2ec2ed8677320cf24e162d440927b5f993c7489e2acc5f999f385f816b8fdcd724caf87";
 
   contactFormSubmitButton.on ('click touch', function () {
-    if (isEmail (emailBox.val())) {
-      var userId = Date.now();
+    if (isEmail (emailBox.val ())) {
+      var userId = Date.now ();
       var userIdProp = "p[" + userId + "]";
       inputGroup.addClass ('valid').removeClass ('invalid');
 
       var contact = {
         "api_action": "contact_add",
         "api_key": apiKey,
-        "email": emailBox.val(),
+        "email": emailBox.val (),
       }
 
       contact[userIdProp] = userId;
 
-      $.post(apiString,
+      $.post (apiString,
         {
           "api_action": "contact_add",
           "api_key": apiKey,
-          "email": emailBox.val(),
-          userIdProp: emailBox.val(),
+          "email": emailBox.val (),
+          userIdProp: userId,
         }, function (response) {
           console.log ("Response: ", response);
         });
 
       setTimeout (function () {
         inputGroup.removeClass ('valid');
-        emailBox.val('');
+        emailBox.val ('');
       }, 3500);
     } else {
-      if (emailBox.val() == "") {
+      if (emailBox.val () == "") {
         inputGroup.removeClass ('invalid');
       } else {
         inputGroup.removeClass ('valid').addClass ('invalid');
@@ -130,11 +130,40 @@ $ (document).ready (function () {
   var roadmapList = $ (".roadmap-list");
   var roadmapItemsActive = 0;
   var roadmapItems = roadmapList.children ();
-  var isVisible = false;
+  var roadmapIsVisible = false;
+
+  var emailForm = $('.email-form-field');
+  var emailFormIsVisible = false;
+  var emailFormEnabled = false;
+
+  function enablePlaceholder () {
+    var i = 0;
+    var txt = 'Enter your e-mail address';
+    var speed = 100;
+    var placeholderText = '';
+
+    function typeWriter() {
+      if (i < txt.length) {
+        placeholderText += txt.charAt(i);
+        emailForm.attr('placeholder', placeholderText);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+  }
 
   window.onscroll = function () {
     if (roadmapList.isOnScreen ()) {
-      isVisible = true;
+      roadmapIsVisible = true;
+    }
+
+    if (!emailFormEnabled) {
+      setTimeout(function () {
+        if (emailForm.isOnScreen ()) {enablePlaceholder()};
+        emailFormEnabled = true;
+      }, 3000);
     }
   }
 
@@ -142,24 +171,24 @@ $ (document).ready (function () {
     roadmapList.removeClass ('active-' + roadmapItemsActive);
   }
 
-  if (window.matchMedia('(max-width: 767px)').matches) {
-    roadmapItems.click(function () {
-      roadmapItems.removeClass('active');
-      $(this).addClass('active');
+  if (window.matchMedia ('(max-width: 767px)').matches) {
+    roadmapItems.click (function () {
+      roadmapItems.removeClass ('active');
+      $ (this).addClass ('active');
     })
 
-    window.ondevicemotion = function(event) {
-      var title = $('.gradient-title');
-      var posX1 = parseFloat(60 + 7 * event.accelerationIncludingGravity.x).toFixed();
-      var posX2 = parseFloat(40 + 7 * event.accelerationIncludingGravity.x).toFixed();
+    window.ondevicemotion = function (event) {
+      var title = $ ('.gradient-title');
+      var posX1 = parseFloat (60 + 7 * event.accelerationIncludingGravity.x).toFixed ();
+      var posX2 = parseFloat (40 + 7 * event.accelerationIncludingGravity.x).toFixed ();
 
-      title.css('background-image','linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #d0ac71 ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed( 2 )) +'%, #58421d 100%')
+      title.css ('background-image', 'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat (40 + 4 * event.accelerationIncludingGravity.x).toFixed (2)) + '%, #d0ac71 ' + (parseFloat (60 + 4 * event.accelerationIncludingGravity.x).toFixed (2)) + '%, #58421d 100%')
     }
   } else {
     setInterval (function () {
-      if (isVisible) {
-        roadmapItems.removeClass('active');
-        clearActiveRoadmapStep(roadmapItemsActive);
+      if (roadmapIsVisible) {
+        roadmapItems.removeClass ('active');
+        clearActiveRoadmapStep (roadmapItemsActive);
         if (roadmapItemsActive === roadmapItems.length - 1) {
           roadmapItemsActive = 0;
         } else {
@@ -169,9 +198,9 @@ $ (document).ready (function () {
       }
     }, 5000);
 
-    roadmapItems.hover(function () {
-      roadmapItems.removeClass('active');
-      $(this).addClass('active');
+    roadmapItems.hover (function () {
+      roadmapItems.removeClass ('active');
+      $ (this).addClass ('active');
     });
   }
 });

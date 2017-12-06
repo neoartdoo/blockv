@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="841px" height="390px" viewBox="0 0 841 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle Copy 29</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="17.2099726%" y1="83.1905011%" x2="70.4118825%" y2="17.079825%" id="linearGradient-1">
-            <stop stop-color="#BE9500" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#FFF10C" offset="100%"></stop>
-        </linearGradient>
-        <polygon id="path-2" points="648.569522 5396.60718 894.635936 5473.09665 107.635936 5875.79281"></polygon>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.152230525">
-        <g id="Desktop-HD-Copy-6" transform="translate(-75.000000, -5422.000000)">
-            <g id="Rectangle-Copy-29" transform="translate(501.135936, 5636.199995) rotate(9.000000) translate(-501.135936, -5636.199995) ">
-                <use fill="#E8C996" xlink:href="#path-2"></use>
-                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
-            </g>
+<defs>
+    <linearGradient x1="17.2099726%" y1="83.1905011%" x2="70.4118825%" y2="17.079825%" id="linearGradient-1">
+        <stop stop-color="#BE9500" stop-opacity="0" offset="0%"></stop>
+        <stop stop-color="#FFF10C" offset="100%"></stop>
+    </linearGradient>
+    <polygon id="path-2" points="648.569522 5396.60718 894.635936 5473.09665 107.635936 5875.79281"></polygon>
+</defs>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.152230525">
+    <g id="Desktop-HD-Copy-6" transform="translate(-75.000000, -5422.000000)">
+        <g id="Rectangle-Copy-29" transform="translate(501.135936, 5636.199995) rotate(9.000000) translate(-501.135936, -5636.199995) ">
+            <use fill="#E8C996" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
         </g>
     </g>
+</g>
 </svg>

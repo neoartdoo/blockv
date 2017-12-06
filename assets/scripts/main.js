@@ -226,12 +226,18 @@ $ (document).ready (function () {
         giftProgressbarWrap.css('opacity', 1);
         break;
       case 5:
-        giftButton.text('Well done!!!');
+        giftButton.text('Start again');
         giftStepsList.removeClass('active');
         giftStepsList.eq( giftStep ).addClass('active');
-        giftButton.attr('disabled', true);
         tryItSlider.slick('slickGoTo', giftStep + 1);
         giftProgressbar.css('width', '100%');
+        break;
+      case 6:
+        giftButton.text('Next Step');
+        giftStepsList.removeClass('active');
+        giftStepsList.eq(0).addClass('active');
+        giftProgressbar.css('width', '0');
+        giftStep = 0;
         break;
       default:
         giftStepsList.removeClass('active');

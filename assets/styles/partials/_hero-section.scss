@@ -114,6 +114,16 @@
   }
 }
 
+.buttons-wrap {
+  .btn {
+    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
 .stats-block {
   position: relative;
   background-color: $blue;

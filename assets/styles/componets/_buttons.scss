@@ -4,6 +4,8 @@
   font-size: 24px;
   font-weight: 600;
   border-width: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 
   &:hover,
   &:focus,
@@ -13,5 +15,9 @@
 
   &.btn-success {
     @include button-variant($white, $green, $green);
+  }
+
+  &.btn-info {
+    @include button-variant($white, $blue, $blue);
   }
 }

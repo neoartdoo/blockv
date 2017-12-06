@@ -163,10 +163,10 @@ $ (document).ready (function () {
     }
 
     if (!emailFormEnabled) {
+      emailFormEnabled = true;
       setTimeout(function () {
         if (emailForm.isOnScreen ()) {enablePlaceholder()};
-        emailFormEnabled = true;
-      }, 3000);
+      }, 2000);
     }
   }
 
@@ -182,9 +182,6 @@ $ (document).ready (function () {
 
     window.ondevicemotion = function (event) {
       var title = $ ('.gradient-title');
-      var posX1 = parseFloat (60 + 7 * event.accelerationIncludingGravity.x).toFixed ();
-      var posX2 = parseFloat (40 + 7 * event.accelerationIncludingGravity.x).toFixed ();
-
       title.css ('background-image', 'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat (40 + 4 * event.accelerationIncludingGravity.x).toFixed (2)) + '%, #d0ac71 ' + (parseFloat (60 + 4 * event.accelerationIncludingGravity.x).toFixed (2)) + '%, #58421d 100%')
     }
   } else {

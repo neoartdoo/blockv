@@ -173,6 +173,17 @@
       }
     }
 
+    @include media-breakpoint-up(lg) {
+      .stat-item {
+        &:nth-child(2) {
+          margin-right: 120px;
+        }
+        &:nth-child(3) {
+          margin-left: 120px;
+        }
+      }
+    }
+
     @include media-breakpoint-down(sm) {
       text-align: center;
     }

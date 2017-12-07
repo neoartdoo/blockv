@@ -161,6 +161,15 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .stat-item {
+        &:nth-child(2) {
+          margin-right: 76px;
+        }
+        &:nth-child(3) {
+          margin-left: 75px;
+        }
+      }
     }
 
     @include media-breakpoint-down(sm) {
@@ -169,9 +178,9 @@
   }
 
   .stat-item {
-    font-weight: 700;
     color: $white;
     font-size: 18px;
+    font-weight: 300;
 
     @include media-breakpoint-down(sm) {
       &:not(:last-child) {

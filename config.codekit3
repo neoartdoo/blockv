@@ -3071,13 +3071,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/v2\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/v2\/index.html",
-		"oF": 0
-		},
 	"\/v2\/js\/aos.js": {
 		"ft": 64,
 		"ma": 0,
@@ -3281,13 +3274,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/v2\/sale.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/v2\/sale.html",
-		"oF": 0
 		},
 	"\/v2\/scss\/.sass-cache\/5635e791199d9b24be93c82947facc3fd5f4f9a4\/_grid.scssc": {
 		"cB": 0,

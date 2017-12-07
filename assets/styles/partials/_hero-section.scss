@@ -58,6 +58,28 @@
       position: relative;
       @include responsive-embed(16, 9);
 
+      &.muted {
+        .controls-layout {
+          .mute-icon {
+            display: block;
+          }
+          .sound-icon {
+            display: none;
+          }
+        }
+      }
+
+      &.sound {
+        .controls-layout {
+          .mute-icon {
+            display: none;
+          }
+          .sound-icon {
+            display: block;
+          }
+        }
+      }
+
       .controls-layout {
         z-index: 1;
 
@@ -74,7 +96,7 @@
           z-index: 1;
         }
 
-        .mute-icon {
+        .status-icon {
           position: absolute;
           right: 20px;
           bottom: 20px;
@@ -132,7 +154,7 @@
   position: relative;
   background-color: $blue;
   margin-bottom: 17px;
-  padding: 25px 0;
+  padding: 20px 0;
 
   .stats-wrap {
     @include media-breakpoint-up(md) {

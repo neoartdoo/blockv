@@ -222,7 +222,6 @@ $(document).ready(function() {
         if(emailForm.isOnScreen()) {
           enablePlaceholder
         }
-        ;
       }, 2000);
     }
   }

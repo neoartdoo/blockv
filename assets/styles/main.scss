@@ -6,8 +6,6 @@ html {
 body {
   width: 100%;
   margin: 0;
-  backface-visibility: hidden;
-  perspective: 600px;
 
   &:after {
     position: fixed;

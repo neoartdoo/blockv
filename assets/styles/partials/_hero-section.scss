@@ -13,7 +13,7 @@
 
       .decoration {
         @include decoration;
-        background: url("../img/triagle-left-gold.svg") no-repeat right top;
+        background: url("../img/triangle-left-gold.svg") no-repeat right top;
         width: 1000px;
         height: 1000px;
 
@@ -114,7 +114,7 @@
 
     .decoration {
       @include decoration;
-      background: url("../img/triagle-hero.svg") no-repeat left top;
+      background: url("../img/triangle-hero.svg") no-repeat left top;
       width: 2000px;
       height: 2000px;
       right: auto;

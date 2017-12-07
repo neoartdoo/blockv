@@ -49,7 +49,7 @@
 
         .decoration {
           @include decoration;
-          background: url("../img/triagle-left-gold.svg") no-repeat right top;
+          background: url("../img/triangle-left-gold.svg") no-repeat right top;
           width: 1000px;
           height: 1000px;
 
@@ -75,7 +75,7 @@
     .app-preview-wrap {
       .decoration {
         @include decoration;
-        background: url("../img/triagle-right-blue.svg") no-repeat right top;
+        background: url("../img/triangle-right-blue.svg") no-repeat right top;
         width: 600px;
         height: 1000px;
         right: auto;
@@ -110,7 +110,7 @@
 
         .decoration {
           @include decoration;
-          background: url("../img/triagle-left-gold.svg") no-repeat right top;
+          background: url("../img/triangle-left-gold.svg") no-repeat right top;
           width: 1000px;
           height: 1000px;
 
@@ -140,7 +140,7 @@
     .app-preview-wrap {
       .decoration {
         @include decoration;
-        background: url("../img/triagle-right-black.svg") no-repeat right top;
+        background: url("../img/triangle-right-black.svg") no-repeat right top;
         width: 600px;
         height: 1000px;
         right: auto;
@@ -172,7 +172,7 @@
 
       .decoration {
         @include decoration;
-        background: url("../img/triagle-left-blue.svg") no-repeat right top;
+        background: url("../img/triangle-left-blue.svg") no-repeat right top;
         width: 1000px;
         height: 1000px;
         right: 0;

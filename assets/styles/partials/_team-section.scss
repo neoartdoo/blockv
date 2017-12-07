@@ -15,7 +15,7 @@
     &.team {
       .decoration {
         @include decoration;
-        background: url("../img/triagle-left-white.svg") no-repeat right top;
+        background: url("../img/triangle-left-white.svg") no-repeat right top;
         width: 1000px;
         height: 1000px;
         left: auto;
@@ -35,7 +35,7 @@
     &.advisors {
       .decoration {
         @include decoration;
-        background: url("../img/triagle-left-white.svg") no-repeat right top;
+        background: url("../img/triangle-left-white.svg") no-repeat right top;
         width: 1000px;
         height: 1000px;
         left: auto;

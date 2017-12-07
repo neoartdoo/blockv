@@ -16,14 +16,6 @@ $(document).ready(function() {
     return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
   };
 
-  function checkPos(number) {
-    if(number > 100) {
-      return 100;
-    } else {
-      return number;
-    }
-  }
-
   var heroVideoWrap = $('.video-wrap');
   var heroVideo = $('#hero-video');
   var soundEnabled = false;
@@ -176,22 +168,6 @@ $(document).ready(function() {
     typeWriter();
   }
 
-  window.onscroll = function() {
-    // if (roadmapList.isOnScreen ()) {
-    //   roadmapIsVisible = true;
-    // }
-
-    if(!emailFormEnabled) {
-      emailFormEnabled = true;
-      setTimeout(function() {
-        if(emailForm.isOnScreen()) {
-          enablePlaceholder
-        }
-        ;
-      }, 2000);
-    }
-  }
-
   // function clearActiveRoadmapStep (number) {
   //   roadmapList.removeClass ('active-' + roadmapItemsActive);
   // }
@@ -238,6 +214,16 @@ $(document).ready(function() {
       setInterval (function () {
         giftButtonEvent();
       }, 3000);
+    }
+
+    if(!emailFormEnabled) {
+      emailFormEnabled = true;
+      setTimeout(function() {
+        if(emailForm.isOnScreen()) {
+          enablePlaceholder
+        }
+        ;
+      }, 2000);
     }
   }
 

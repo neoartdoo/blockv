@@ -243,15 +243,10 @@ $(document).ready(function() {
     }
     giftStep++;
   }
-});
 
-$(window).on('load', function(){
-  //Counter init
   $('.counter').counterUp({
     delay: 1,
     time: 1000
   });
-
 });
-
 

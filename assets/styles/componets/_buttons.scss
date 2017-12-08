@@ -76,9 +76,7 @@
     background-color: transparent;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover {
     &:after {
       width: 100%;
     }

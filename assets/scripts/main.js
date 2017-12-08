@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  $('.counter').counterUp({
+    delay: 1,
+    time: 1000
+  });
+
   $.fn.isOnScreen = function() {
     var win = $(window);
 
@@ -243,10 +248,5 @@ $(document).ready(function() {
     }
     giftStep++;
   }
-
-  $('.counter').counterUp({
-    delay: 1,
-    time: 1000
-  });
 });
 

@@ -177,6 +177,10 @@ $(document).ready(function() {
   //   roadmapList.removeClass ('active-' + roadmapItemsActive);
   // }
 
+  function getCoordinate (position) {
+    return parseFloat(position + 2 * event.accelerationIncludingGravity.x).toFixed(2);
+  }
+
   if(window.matchMedia('(max-width: 767px)').matches) {
     // roadmapItems.click (function () {
     //   roadmapItems.removeClass ('active');
@@ -185,7 +189,21 @@ $(document).ready(function() {
 
     window.ondevicemotion = function(event) {
       var title = $('.gradient-title');
-      title.css('background-image', 'linear-gradient(to left, #58421d 0%, #d0ac71 ' + (parseFloat(40 + 4 * event.accelerationIncludingGravity.x).toFixed(2)) + '%, #d0ac71 ' + (parseFloat(60 + 4 * event.accelerationIncludingGravity.x).toFixed(2)) + '%, #58421d 100%')
+      var darkColor = '#b8893d ';
+      var lightColor = '#ddc297 ';
+
+      title.css('background-image', 'linear-gradient(to left, ' +
+        darkColor +' 0%, ' +
+        lightColor + getCoordinate(10) + '%, ' +
+        darkColor + getCoordinate(20) + '%, ' +
+        darkColor + getCoordinate(30) + '%, ' +
+        lightColor + getCoordinate(35) + '%, ' +
+        darkColor + getCoordinate(40) + '%, ' +
+        darkColor + getCoordinate(60) + '%, ' +
+        lightColor + getCoordinate(75) + '%, ' +
+        darkColor + getCoordinate(85) + '%, ' +
+        lightColor + getCoordinate(90) + '%, ' +
+        darkColor + ' 100%')
     }
   } else {
     // setInterval (function () {

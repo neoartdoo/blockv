@@ -192,13 +192,13 @@ $(document).ready(function() {
       var darkColor = '#b8893d ';
       var lightColor = '#ddc297 ';
 
-      title.css('background-image', 'linear-gradient(to left, ' +
+      title.css('background-image', 'linear-gradient(135deg, ' +
         darkColor +' 0%, ' +
         lightColor + getCoordinate(10) + '%, ' +
         darkColor + getCoordinate(20) + '%, ' +
         darkColor + getCoordinate(30) + '%, ' +
         lightColor + getCoordinate(35) + '%, ' +
-        darkColor + getCoordinate(40) + '%, ' +
+        darkColor + getCoordinate(50) + '%, ' +
         darkColor + getCoordinate(60) + '%, ' +
         lightColor + getCoordinate(75) + '%, ' +
         darkColor + getCoordinate(85) + '%, ' +

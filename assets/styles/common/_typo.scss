@@ -90,6 +90,11 @@
   font-size: 24px;
   font-weight: 300;
   color: $black;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 20px;
+  }
 }
 
 .page-title,

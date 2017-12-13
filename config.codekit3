@@ -408,6 +408,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/experience.png": {
+		"ft": 32768,
+		"iS": 142901,
+		"oA": 0,
+		"oAP": "\/assets\/img\/experience.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/gil.jpeg": {
 		"ft": 16384,
 		"iS": 10219,
@@ -563,6 +574,46 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/road-step-icon-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/road-step-icon-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/road-step-icon-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/road-step-icon-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/road-step-icon-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/road-step-icon-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/road-step-icon-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/road-step-icon-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/sam.jpg": {
 		"ft": 16384,
 		"iS": 12590,
@@ -710,6 +761,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/scripts\/jquery.counterup.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/scripts\/main-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/main-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1800,6 +1861,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/styles\/partials\/_experience-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/partials\/_experience-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/styles\/partials\/_feature-section.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1930,6 +2004,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/experience.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/experience.html",
 		"oF": 0
 		},
 	"\/favicons\/android-chrome-192x192.png": {

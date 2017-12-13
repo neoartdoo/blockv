@@ -39,11 +39,6 @@ $(document).ready(function() {
     soundEnabled = !soundEnabled;
   }
 
-  // Video script
-  setTimeout(function() {
-    document.getElementById("hero-video").play();
-  }, 2000);
-
   $('.video-wrap .play').click(function() {
     toggleSound();
   })
@@ -142,7 +137,6 @@ $(document).ready(function() {
     "false": true,
     "autoplaySpeed": false,
     "arrows": false,
-    "fade": true,
     "cssEase": "linear",
   });
 

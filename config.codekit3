@@ -1925,27 +1925,12 @@
 		"oAP": "\/assets\/whitepaper.pdf",
 		"oF": 0
 		},
-	"\/bitbucket-pipelines.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/bitbucket-pipelines.yml",
-		"oF": 0
-		},
 	"\/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/browserconfig.xml",
 		"oF": 0
-		},
-	"\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		},
 	"\/favicons\/android-chrome-192x192.png": {
 		"ft": 32768,

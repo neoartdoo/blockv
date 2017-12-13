@@ -22,6 +22,10 @@ body {
   }
 }
 
+.wow {
+  visibility: hidden;
+}
+
 @import "settings";
 @import "packages/bootstrap";
 @import "common/common";

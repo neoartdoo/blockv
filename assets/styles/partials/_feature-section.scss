@@ -138,6 +138,10 @@
     }
 
     .app-preview-wrap {
+      @include media-breakpoint-down(xs) {
+        transform: scale(1.1);
+      }
+
       .decoration {
         @include decoration;
         background: url("../img/triangle-right-black.svg") no-repeat right top;
@@ -184,6 +188,10 @@
         }
       }
     }
+  }
+
+  .slider-wrap {
+    overflow: hidden;
   }
 
   .points-list {
@@ -336,8 +344,19 @@
   }
 
   .steps-list {
+    @include media-breakpoint-down(xs) {
+      min-height: 80px;
+    }
+
+    li {
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
+
     .active {
       font-weight: 500;
+      display: block;
     }
   }
 

@@ -143,7 +143,9 @@ $(document).ready(function() {
     "autoplaySpeed": 2000,
     "arrows": false,
     "fade": true,
-    "cssEase": "linear"
+    "cssEase": "linear",
+    "draggable": false,
+    "swipe": false,
   });
 
   // var roadmapList = $ (".roadmap-list");

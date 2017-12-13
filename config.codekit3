@@ -72,11 +72,141 @@
 		"oAP": "\/.idea\/workspace.xml",
 		"oF": 0
 		},
-	"\/assets\/fonts": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/assets\/fonts",
+	"\/assets\/fonts\/HelveticaNeueCondensed-Black.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCondensed-Black.ttf",
 		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCondensed-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCondensed-Bold.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Black.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Black.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-BlackItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-BlackItalic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Bold.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Bold.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-BoldItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-BoldItalic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Heavy.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Heavy.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-HeavyItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-HeavyItalic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Italic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Italic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Light.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Light.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-LightItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-LightItalic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Medium.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Medium.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-MediumItaicl.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-MediumItaicl.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Roman.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Roman.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-Thin.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-Thin.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-ThinItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-ThinItalic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-UltraLight.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-UltraLight.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/HelveticaNeueCyr-UltraLightItalic.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/fonts\/HelveticaNeueCyr-UltraLightItalic.otf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/icons.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/img\/alex.jpg": {
 		"ft": 16384,
@@ -574,11 +704,25 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/assets\/scripts": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/assets\/scripts",
-		"oF": 0
+	"\/assets\/scripts\/jquery.counterup.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/jquery.counterup.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/scripts\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/scripts\/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/styles\/_settings.scss": {
 		"aP": 0,
@@ -1759,6 +1903,20 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/assets\/video\/blockv_animation.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/video\/blockv_animation.mp4",
+		"oF": 0
+		},
+	"\/assets\/video\/blockv_animation.webm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/video\/blockv_animation.webm",
+		"oF": 0
 		},
 	"\/assets\/whitepaper.pdf": {
 		"cB": 0,
@@ -4144,7 +4302,7 @@
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
-	"autoprefixerBrowserString": "last 6 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -6113,7 +6271,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/assets\/fonts, \/assets\/scripts",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",

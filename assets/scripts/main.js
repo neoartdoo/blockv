@@ -140,12 +140,10 @@ $(document).ready(function() {
     "dots": false,
     "infinite": true,
     "false": true,
-    "autoplaySpeed": 2000,
+    "autoplaySpeed": false,
     "arrows": false,
     "fade": true,
     "cssEase": "linear",
-    "draggable": false,
-    "swipe": false,
   });
 
   // var roadmapList = $ (".roadmap-list");
@@ -233,40 +231,52 @@ $(document).ready(function() {
   var giftStepsList = $('.steps-list li');
 
   window.onscroll = function() {
-    if($('.steps-list').isOnScreen() && !giftBlockIsVisible) {
-      giftBlockIsVisible = true;
-
-      setInterval (function () {
-        giftButtonEvent();
-      }, 3000);
-    }
-
     if(!emailFormEnabled) {
       emailFormEnabled = true;
       setTimeout(function() {
         if(emailForm.isOnScreen()) {
-          enablePlaceholder
+          enablePlaceholder();
         }
       }, 2000);
+    }
+
+    if($('.steps-list').isOnScreen() && !giftBlockIsVisible) {
+      giftBlockIsVisible = true;
+
+      if(window.matchMedia('(min-width: 768px)').matches) {
+        setInterval (function () {
+          giftButtonEvent();
+        }, 3000);
+      }
     }
   }
 
   function giftButtonEvent() {
     switch(giftStep) {
       case 6:
-        giftStepsList.removeClass('active');
-        giftStepsList.eq(0).addClass('active');
         giftStep = 0;
-        tryItSlider.slick('slickGoTo', 0);
+        tryItSlider.slick('slickGoTo', 1);
         break;
       default:
-        giftStepsList.removeClass('active');
-        giftStepsList.eq(giftStep).addClass('active');
         if(giftStep < 6) {
           tryItSlider.slick('slickGoTo', giftStep + 1);
         }
     }
     giftStep++;
   }
+
+  function updateTryItList(slideNumber) {
+    giftStepsList.removeClass('active');
+    if(slideNumber === -1) {
+      giftStepsList.eq(0).addClass('active');
+    } else {
+      giftStepsList.eq(slideNumber).addClass('active');
+    }
+  }
+
+  tryItSlider.on('afterChange', function(slick, currentSlide){
+    var currentSiderId = $('.slider-try-it .slick-active').attr('data-slick-index');
+    updateTryItList(currentSiderId - 1);
+  });
 });
 

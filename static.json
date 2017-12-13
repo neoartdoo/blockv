@@ -5,7 +5,7 @@
     "access": false,
     "error": "warn"
   },
-  "https_only": true,
+  "https_only": false,
   "routes": {
     "/static.json": "index.html"
   }

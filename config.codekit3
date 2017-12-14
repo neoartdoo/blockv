@@ -218,6 +218,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/img\/batman-icon.png": {
+		"ft": 32768,
+		"iS": 59431,
+		"oA": 0,
+		"oAP": "\/assets\/img\/batman-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/brock.jpg": {
 		"ft": 16384,
 		"iS": 8812,

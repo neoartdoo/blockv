@@ -1,6 +1,37 @@
 .roadmap-section {
   padding: 100px 0 30px;
 
+  .section-title {
+    margin-bottom: 40px;
+
+    .featured {
+      position: relative;
+
+      .decoration {
+        @include decoration;
+        background: url("../img/triangle-left-gold-2.svg") no-repeat right top;
+        width: 1000px;
+        height: 1000px;
+
+        @include media-breakpoint-up(lg) {
+          background-size: 600px;
+        }
+
+        @include media-breakpoint-only(md) {
+          background-size: 510px;
+        }
+
+        @include media-breakpoint-only(sm) {
+          background-size: 400px;
+        }
+
+        @include media-breakpoint-down(xs) {
+          background-size: 340px;
+        }
+      }
+    }
+  }
+
   .roadmap-list {
     width: 100%;
     position: relative;

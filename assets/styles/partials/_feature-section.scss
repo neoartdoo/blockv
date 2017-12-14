@@ -138,10 +138,6 @@
     }
 
     .app-preview-wrap {
-      @include media-breakpoint-down(xs) {
-        transform: scale(1.1);
-      }
-
       .decoration {
         @include decoration;
         background: url("../img/triangle-right-black.svg") no-repeat right top;
@@ -192,6 +188,7 @@
 
   .slider-wrap {
     overflow: hidden;
+    max-height: 100%;
   }
 
   .points-list {
@@ -259,6 +256,10 @@
       width: 280px;
     }
 
+    @include media-breakpoint-down(xs) {
+      width: 260px;
+    }
+
     .slider-wrap {
       position: absolute;
 
@@ -273,6 +274,12 @@
         top: 58px;
         left: 54px;
       }
+
+      @include media-breakpoint-down(xs) {
+        width: 170px;
+        top: 54px;
+        left: 49px;
+      }
     }
 
     .slick-dots {
@@ -283,6 +290,17 @@
       @include media-breakpoint-down(sm) {
         bottom: -90px;
       }
+    }
+  }
+
+  .mobile-instruction {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
     }
   }
 
@@ -345,7 +363,8 @@
 
   .steps-list {
     @include media-breakpoint-down(xs) {
-      min-height: 80px;
+      min-height: 50px;
+      margin-bottom: 0;
     }
 
     li {

@@ -25,7 +25,7 @@
 <script src="assets/scripts/jquery.counterup.min.js"></script>
 <script src="assets/scripts/main.js?ckcachebust=b19fe3ffd475f44c81e2c6fc41ad21c1"></script>
 
-<section class="hero-section">
+<section class="hero-section full">
     <!-- HEADER -->
     <header class="header wow fadeIn" data-wow-delay="3s">
         <nav class="navbar navbar-default">
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand">
+                    <a href="/" class="navbar-brand">
                         <svg viewBox="0 0 132 50">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="Desktop-HD-Copy-6" transform="translate(-72.000000, -26.000000)">
@@ -320,6 +320,10 @@
                                 </div>
                             </div>
                             <span class="decoration"></span>
+                        </div>
+
+                        <div class="mobile-instruction">
+                            Swipe to next step.
                         </div>
                     </div>
                 </div>
@@ -1024,14 +1028,13 @@
 <section class="roadmap-section" id="roadmap">
     <div class="container">
         <h3 class="section-title">
-            ROADMAP
+            ROADMAP <span class="featured gradient-title">2018<span class="decoration"></span></span>
         </h3>
 
         <div class="roadmap-list">
             <div class="list-item active" data-number="0">
-                <div class="block">
+                <div class="title-block">
                     <h6 class="title">
-                        2018 <br>
                         Q1
                     </h6>
                 </div>
@@ -1050,10 +1053,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="list-item styled" data-number="1">
-                <div class="block">
+            <div class="list-item" data-number="1">
+                <div class="title-block">
                     <h6 class="title">
-                        2018 <br>
                         Q2
                     </h6>
                 </div>
@@ -1070,9 +1072,8 @@
                 </div>
             </div>
             <div class="list-item" data-number="2">
-                <div class="block">
+                <div class="title-block">
                     <h6 class="title">
-                        2018 <br>
                         Q3
                     </h6>
                 </div>
@@ -1089,9 +1090,8 @@
                 </div>
             </div>
             <div class="list-item" data-number="3">
-                <div class="block">
+                <div class="title-block">
                     <h6 class="title">
-                        2018 <br>
                         Q4
                     </h6>
                 </div>
@@ -1537,11 +1537,20 @@
         </div>
 
         <div class="design-by">
-            design by <a href="http://igniterltd.com" target="_blank">IGNITER</a>
+            design by <a href="http://www.igniterltd.com" target="_blank">IGNITER</a>
         </div>
 
     </div>
 </footer>
+
+<script>
+  $(document).ready(function() {
+    // Video script
+    setTimeout(function() {
+      document.getElementById("hero-video").play();
+    }, 2000);
+  })
+</script>
 </body>
 </html>
 

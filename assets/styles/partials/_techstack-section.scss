@@ -553,6 +553,11 @@
               h5 {
                 margin: 0;
                 font-size: 12px;
+
+                @include media-breakpoint-down(xs) {
+                  width: 200px;
+                  white-space: pre-wrap;
+                }
               }
             }
             i {
@@ -595,6 +600,12 @@
       transform: translate(-50%, -50%);
       width: 30px !important;
       height: 30px !important;
+    }
+  }
+
+  p {
+    @include media-breakpoint-down(xs) {
+      line-height: 1.3;
     }
   }
 }

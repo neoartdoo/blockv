@@ -283,14 +283,13 @@
 
       .content {
         transition: opacity .3s ease;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
         color: $black;
         margin-bottom: 25px;
 
         @include media-breakpoint-down(xs) {
-          font-size: 16px;
           padding-top: 5px;
         }
 

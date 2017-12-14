@@ -181,6 +181,10 @@ $(document).ready(function() {
     //   $ (this).addClass ('active');
     // })
 
+    $('.video-wrap').attr('data-wow-delay', '0s');
+    $('.hero-section .content-wrap .decoration').attr('data-wow-delay', '0s');
+    $('.stats-block').attr('data-wow-delay', '0.5s');
+
     window.ondevicemotion = function(event) {
       var title = $('.gradient-title');
       var darkColor = '#b8893d ';

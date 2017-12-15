@@ -1,0 +1,42 @@
+.not-found-block {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 200px;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+
+    .featured {
+      position: relative;
+    }
+
+    .decoration {
+      @include decoration;
+      background: url("../img/triangle-left-gold.svg") no-repeat right top;
+      width: 1000px;
+      height: 1000px;
+
+      @include media-breakpoint-up(lg) {
+        background-size: 500px;
+      }
+
+      @include media-breakpoint-only(md) {
+        background-size: 430px;
+      }
+
+      @include media-breakpoint-only(sm) {
+        background-size: 370px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        background-size: 340px;
+      }
+    }
+  }
+}
+
+.not-found-page {
+  .main-content {
+    overflow: hidden;
+  }
+}

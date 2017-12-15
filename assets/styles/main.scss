@@ -21,13 +21,13 @@ body {
     background-size: 200px;
   }
 
-  &.not-found-page {
-    &:after {
-      background-image: url(../img/bg-gif-404.gif);
-      background-size: cover;
-      background-position: center;
-    }
-  }
+  //&.not-found-page {
+  //  &:after {
+  //    background-image: url(../img/bg-gif-404.gif);
+  //    background-size: cover;
+  //    background-position: center;
+  //  }
+  //}
 }
 .wow {
   visibility: hidden;

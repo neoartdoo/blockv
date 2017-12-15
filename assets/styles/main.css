@@ -1,4 +1,4 @@
-body,html{overflow-x:hidden}body{width:100%;margin:0}body:after{position:fixed;content:'';width:100%;height:100%;left:0;top:0;z-index:-10;background:url(../img/method-draw-image.svg) center center repeat;background-attachment:fixed;opacity:.25;background-size:200px}body.not-found-page:after{background-image:url(../img/bg-gif-404.gif);background-size:cover;background-position:center}.wow{visibility:hidden}/*!
+body,html{overflow-x:hidden}body{width:100%;margin:0}body:after{position:fixed;content:'';width:100%;height:100%;left:0;top:0;z-index:-10;background:url(../img/method-draw-image.svg) center center repeat;background-attachment:fixed;opacity:.25;background-size:200px}.wow{visibility:hidden}/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)

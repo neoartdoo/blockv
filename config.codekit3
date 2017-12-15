@@ -72,6 +72,13 @@
 		"oAP": "\/.idea\/workspace.xml",
 		"oF": 0
 		},
+	"\/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/404.html",
+		"oF": 0
+		},
 	"\/assets\/fonts\/HelveticaNeueCondensed-Black.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -1947,6 +1954,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/styles\/partials\/_not-found-block.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/styles\/partials\/_not-found-block.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/styles\/partials\/_partials.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2013,18 +2033,18 @@
 		"oAP": "\/assets\/video\/blockv_animation.webm",
 		"oF": 0
 		},
-	"\/assets\/whitepaper.pdf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/whitepaper.pdf",
-		"oF": 0
-		},
 	"\/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/browserconfig.xml",
+		"oF": 0
+		},
+	"\/documents\/whitepaper.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/documents\/whitepaper.pdf",
 		"oF": 0
 		},
 	"\/experience.html": {

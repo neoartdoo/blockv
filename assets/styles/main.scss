@@ -20,8 +20,15 @@ body {
     opacity: .25;
     background-size: 200px;
   }
-}
 
+  //&.not-found-page {
+  //  &:after {
+  //    background-image: url(../img/bg-gif-404.gif);
+  //    background-size: cover;
+  //    background-position: center;
+  //  }
+  //}
+}
 .wow {
   visibility: hidden;
 }

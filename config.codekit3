@@ -236,6 +236,14 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/bg-gif-404.gif": {
+		"ft": 4194304,
+		"iS": 5759631,
+		"oA": 0,
+		"oAP": "\/assets\/img\/bg-gif-404.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/img\/brock.jpg": {
 		"ft": 16384,
 		"iS": 8812,
@@ -783,6 +791,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/scripts\/home.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/assets\/scripts\/home-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/scripts\/jquery.counterup.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -793,23 +811,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/scripts\/main-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/scripts\/main-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/assets\/scripts\/main.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/assets\/scripts\/main-min.js",
-		"oF": 0,
+		"oF": 1,
 		"sC": 3,
 		"tS": 0
 		},

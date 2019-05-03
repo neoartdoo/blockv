@@ -1,6 +1,1 @@
-ExpiresActive On
-ExpiresByType image/gif       604800
-ExpiresByType image/png       604800
-ExpiresByType image/svg       604800
-ExpiresByType image/jpg       604800
-ExpiresByType image/jpeg      604800
+
